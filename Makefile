@@ -22,6 +22,7 @@ test:
 	echo "test - not implemented yet"
 
 pack:
+	make clean
 	zip -r icd20-hw1.zip . -x ".*" -x "*.zip"
 
 .PHONY: clean

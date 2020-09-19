@@ -10,7 +10,7 @@ On \*nix:
 bash activate.sh # start the container, it will auto-pull the image if you didn't pull it
 ```
 
-[![asciicast](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr.svg)](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr)
+[![asciicast](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ.svg)](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ)
 
 On Windows:
 ```
