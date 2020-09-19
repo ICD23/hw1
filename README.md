@@ -5,19 +5,26 @@
 We provide a docker image for the environment:
 (you need install docker by yourself first)
 
+On \*nix:
 ```
-make pull # fetch the image
-make activate # start the container, it will auto-pull the image if you didn't pull it
+bash activate.sh # start the container, it will auto-pull the image if you didn't pull it
 ```
 
+[![asciicast](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr.svg)](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr)
+
+On Windows:
+```
+activate.bat
+```
+[![windows setup](https://i.ytimg.com/vi/HddnQnU4zXk/hqdefault.jpg)](https://www.youtube.com/watch?v=HddnQnU4zXk)
+
 It will mount the repository to `/root/hw1`.
-Note the `make activate` use the `--rm` flag on docker command,
+Note the script use the `--rm` flag on docker command,
 which means it will remove the container every time you exit.
 
 The container is for compilation, we simply provide `vim` in this container,
 you can use any editor you like on your host machine.
 
-[![asciicast](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr.svg)](https://asciinema.org/a/a0V4V43hzTTfmCmHErcDkjitr)
 
 # Assignment
 
