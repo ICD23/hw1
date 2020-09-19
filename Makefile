@@ -13,8 +13,10 @@ $(SCANNER).c: %.c: %.l
 	$(LEX) -o $@ $<
 
 prepare:
-	apt install clang
-	apt install g++
+	# we have installed the package meet the basic needs
+	# you can prepare the extra package you need here, e.g.
+	#apt install clang
+	#apt install g++
 
 test:
 	echo "test - not implemented yet"
