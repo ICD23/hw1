@@ -21,7 +21,9 @@ you can use any editor you like on your host machine.
 
 # Assignment
 
-You need provide two make command for us to judge you work:
+Please follow the specification on E3 to implement the scanner.
+
+You need provide two make commands for us to judge your work:
 - make prepare (if any extra package is used)
 - make (to build your binary)
 
@@ -29,4 +31,4 @@ We have provided these commands in the Makefile, feel free to modify them accord
 
 # Submission
 
-You can use the `make pack` command to zip your work, and upload to new E3.
+You can use the `make pack` command to zip your work, and upload it to new E3.
