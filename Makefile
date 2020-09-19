@@ -35,10 +35,3 @@ DOCKER_IMG = ${DOCKERHUB_ACCOUNT}/${IMAGE_NAME}:latest
 
 pull:
 	docker pull ${DOCKER_IMG}
-
-activate:
-ifeq ($(findstring cmd.exe,$(SHELL)),cmd.exe)
-	docker run --rm -it -w /root -v %cd%:/root/hw1 plaslab/compiler-f20-hw1 /bin/bash
-else
-	docker run --rm -it -w /root -v ${PWD}:/root/hw1 plaslab/compiler-f20-hw1 /bin/bash
-endif
