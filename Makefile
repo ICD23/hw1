@@ -19,6 +19,9 @@ prepare:
 test:
 	echo "test - not implemented yet"
 
+pack:
+	zip -r icd20-hw1.zip . -x ".*" -x "*.zip"
+
 .PHONY: clean
 
 clean:
@@ -33,7 +36,7 @@ pull:
 
 activate:
 ifeq ($(findstring cmd.exe,$(SHELL)),cmd.exe)
-	docker run --rm -it -w /root -v %cd%:/root plaslab/compiler-f20-hw1 /bin/bash
+	docker run --rm -it -w /root -v %cd%:/root/hw1 plaslab/compiler-f20-hw1 /bin/bash
 else
-	docker run --rm -it -w /root -v ${PWD}:/root plaslab/compiler-f20-hw1 /bin/bash
+	docker run --rm -it -w /root -v ${PWD}:/root/hw1 plaslab/compiler-f20-hw1 /bin/bash
 endif
