@@ -19,7 +19,7 @@ prepare:
 	#apt install g++
 
 test: all
-	make -C test/
+	make test -C test/
 
 pack:
 	make clean

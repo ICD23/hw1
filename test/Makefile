@@ -7,6 +7,9 @@ all: output $(OBJS)
 output/%.out: %.p
 	@-./$(EXE) $^ > $@ 2>&1
 
+test: all
+	@bash test.sh
+
 output:
 	mkdir -p $@
 
