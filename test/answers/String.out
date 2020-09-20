@@ -1,0 +1,19 @@
+   0-th token(type:STRING    -503) on line    1,   1 : ""
+   1-th token(type:STRING    -503) on line    2,   1 : "Single String"
+   2-th token(type:STRING    -503) on line    3,   1 : "Double"
+   3-th token(type:STRING    -503) on line    3,  10 : "Strings"
+   4-th token(type:STRING    -503) on line    4,   1 : "double quote->"
+   5-th token(type:STRING    -503) on line    4,  17 : "<-double quote"
+   6-th token(type:STRING    -503) on line    5,   1 : "Your string should ignore these reserved words -> program var array not"
+   7-th token(type:STRING    -503) on line    6,   1 : " Test whether you can ignore comments // This is a comment "
+   8-th token(type:STRING    -503) on line    7,   1 : " Test whether you can ignore comments /* This is a comment */ "
+   9-th token(type:STRING    -503) on line    8,   1 : " Test whether you can ignore comments // This is a comment /* This is a comment */ "
+  10-th token(type:STRING    -503) on line   10,   1 : " Multi-Line
+  String Can you tokenize it"
+  11-th token(type:STRING    -503) on line   12,   1 : " Multi-Line
+  With comment // This is a comment "
+  12-th token(type:STRING    -503) on line   14,   1 : " Multi-Line
+  With comment 
+  /* 
+    This is a comment
+  */ "

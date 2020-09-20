@@ -1,0 +1,114 @@
+   0-th token(type:IDENTIFIER-500) on line    1,   1 : integers
+   1-th token(type:KEYWORD   -403) on line    1,   9 : :
+   2-th token(type:NUMBER    -501) on line    3,   1 : 0
+   3-th token(type:NUMBER    -501) on line    4,   1 : 123
+   4-th token(type:NUMBER    -501) on line    5,   1 : 00
+   5-th token(type:NUMBER    -501) on line    6,   1 : 00123
+   6-th token(type:NUMBER    -501) on line    7,   1 : 0123
+   7-th token(type:NUMBER    -501) on line    8,   1 : 123456789012345678901234567890
+   8-th token(type:IDENTIFIER-500) on line    8,  33 : too
+   9-th token(type:IDENTIFIER-500) on line    8,  37 : big
+  10-th token(type:IDENTIFIER-500) on line    8,  41 : for
+  11-th token(type:IDENTIFIER-500) on line    8,  45 : the
+  12-th token(type:IDENTIFIER-500) on line    8,  49 : compiler
+  13-th token(type:KEYWORD   -404) on line    8,  57 : ,
+  14-th token(type:IDENTIFIER-500) on line    8,  59 : but
+  15-th token(type:IDENTIFIER-500) on line    8,  63 : this
+  16-th token(type:IDENTIFIER-500) on line    8,  68 : is
+  17-th token(type:IDENTIFIER-500) on line    8,  71 : ok
+  18-th token(type:IDENTIFIER-500) on line    8,  74 : for
+  19-th token(type:IDENTIFIER-500) on line    8,  78 : the
+  20-th token(type:IDENTIFIER-500) on line    8,  82 : scanner
+  21-th token(type:KEYWORD   -407) on line    8,  89 : .
+  22-th token(type:IDENTIFIER-500) on line   10,   1 : floating
+  23-th token(type:IDENTIFIER-500) on line   10,  10 : point
+  24-th token(type:IDENTIFIER-500) on line   10,  16 : numbers
+  25-th token(type:KEYWORD   -403) on line   10,  23 : :
+  26-th token(type:NUMBER    -501) on line   11,   1 : 0
+  27-th token(type:KEYWORD   -407) on line   11,   2 : .
+  28-th token(type:NUMBER    -502) on line   12,   1 : 0.0
+  29-th token(type:IDENTIFIER-500) on line   12,   6 : OK
+  30-th token(type:NUMBER    -501) on line   13,   1 : 000
+  31-th token(type:KEYWORD   -407) on line   13,   4 : .
+  32-th token(type:KEYWORD   -407) on line   14,   1 : .
+  33-th token(type:NUMBER    -501) on line   14,   2 : 000
+  34-th token(type:NUMBER    -502) on line   15,   1 : 0.000
+  35-th token(type:IDENTIFIER-500) on line   15,   7 : OK
+  36-th token(type:NUMBER    -502) on line   16,   1 : 000.00
+  37-th token(type:KEYWORD   -407) on line   17,   1 : .
+  38-th token(type:NUMBER    -501) on line   17,   2 : 123
+  39-th token(type:IDENTIFIER-500) on line   19,   1 : scientific
+  40-th token(type:IDENTIFIER-500) on line   19,  12 : notations
+  41-th token(type:KEYWORD   -403) on line   19,  21 : :
+  42-th token(type:NUMBER    -502) on line   20,   1 : 3.45E4
+  43-th token(type:NUMBER    -502) on line   21,   1 : 3.45E+4
+  44-th token(type:NUMBER    -502) on line   22,   1 : 3.45E-4
+  45-th token(type:NUMBER    -502) on line   23,   1 : 3.45E04
+  46-th token(type:NUMBER    -502) on line   24,   1 : 3.45E+04
+  47-th token(type:NUMBER    -502) on line   25,   1 : 3.45E-04
+  48-th token(type:NUMBER    -502) on line   27,   1 : 1.23e4
+  49-th token(type:NUMBER    -502) on line   28,   1 : 3.45e+4
+  50-th token(type:NUMBER    -502) on line   29,   1 : 3.45e-4
+  51-th token(type:NUMBER    -502) on line   30,   1 : 3.45e04
+  52-th token(type:NUMBER    -502) on line   31,   1 : 3.45e+04
+  53-th token(type:NUMBER    -502) on line   32,   1 : 3.45e-04
+  54-th token(type:IDENTIFIER-500) on line   34,   1 : strings
+  55-th token(type:KEYWORD   -403) on line   34,   8 : :
+  56-th token(type:STRING    -503) on line   35,   1 : "abcde"
+  57-th token(type:STRING    -503) on line   36,   1 : "abcd"
+  58-th token(type:STRING    -503) on line   36,   7 : "efg"
+  59-th token(type:IDENTIFIER-500) on line   36,  13 : double
+  60-th token(type:IDENTIFIER-500) on line   36,  20 : quote
+  61-th token(type:IDENTIFIER-500) on line   36,  26 : in
+  62-th token(type:IDENTIFIER-500) on line   36,  29 : a
+  63-th token(type:KEYWORD   -306) on line   36,  31 : string
+  64-th token(type:STRING    -503) on line   37,   1 : "abc\ndef"
+  65-th token(type:IDENTIFIER-500) on line   37,  13 : newline
+  66-th token(type:IDENTIFIER-500) on line   37,  21 : in
+  67-th token(type:IDENTIFIER-500) on line   37,  24 : a
+  68-th token(type:KEYWORD   -306) on line   37,  26 : string
+  69-th token(type:KEYWORD   -407) on line   37,  32 : .
+  70-th token(type:STRING    -503) on line   38,   1 : ''''
+  71-th token(type:IDENTIFIER-500) on line   38,   6 : single
+  72-th token(type:IDENTIFIER-500) on line   38,  13 : quote
+  73-th token(type:IDENTIFIER-500) on line   38,  19 : in
+  74-th token(type:IDENTIFIER-500) on line   38,  22 : a
+  75-th token(type:IDENTIFIER-500) on line   38,  24 : character
+  76-th token(type:STRING    -503) on line   39,   1 : "'"
+  77-th token(type:IDENTIFIER-500) on line   39,   5 : single
+  78-th token(type:IDENTIFIER-500) on line   39,  12 : quote
+  79-th token(type:IDENTIFIER-500) on line   39,  18 : in
+  80-th token(type:IDENTIFIER-500) on line   39,  21 : a
+  81-th token(type:KEYWORD   -306) on line   39,  23 : string
+  82-th token(type:IDENTIFIER-500) on line   42,   1 : comments
+  83-th token(type:KEYWORD   -403) on line   42,   9 : :
+[INFO ] line   44:  1 comment string // this is a comment
+
+[INFO ] line   45:  1 comment string start
+/* this is a comment */
+[INFO ] line   45: 22 comment string end
+[INFO ] line   46:  1 comment string start
+/* this is wrong    //  hello hello    This is the same comment. */
+[INFO ] line   46: 66 comment string end
+[INFO ] line   47:  1 comment string // fdsfds */  fsdfds /* fdsfds */ fdsfdsfds
+
+  84-th token(type:IDENTIFIER-500) on line   49,   1 : pragmas
+  85-th token(type:KEYWORD   -403) on line   49,   8 : :
+  86-th token(type:IDENTIFIER-500) on line   49,  11 : a
+  87-th token(type:IDENTIFIER-500) on line   49,  13 : pragma
+  88-th token(type:IDENTIFIER-500) on line   49,  20 : occupies
+  89-th token(type:IDENTIFIER-500) on line   49,  29 : a
+  90-th token(type:IDENTIFIER-500) on line   49,  31 : single
+  91-th token(type:IDENTIFIER-500) on line   49,  38 : line
+  92-th token(type:IDENTIFIER-500) on line   49,  43 : by
+  93-th token(type:IDENTIFIER-500) on line   49,  46 : itself
+  94-th token(type:KEYWORD   -404) on line   49,  52 : ,
+  95-th token(type:IDENTIFIER-500) on line   49,  54 : starting
+  96-th token(type:IDENTIFIER-500) on line   49,  63 : with
+  97-th token(type:STRING    -503) on line   49,  68 : "#pragma"
+  98-th token(type:KEYWORD   -407) on line   49,  77 : .
+[ERROR] line   51:  1 lexical analyzer error #
+  99-th token(type:IDENTIFIER-500) on line   51,   2 : pragmas
+ 100-th token(type:IDENTIFIER-500) on line   51,  10 : profiling
+ 101-th token(type:NUMBER    -501) on line   51,  20 : 27
+ 102-th token(type:NUMBER    -501) on line   51,  23 : 59

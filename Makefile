@@ -18,16 +18,17 @@ prepare:
 	#apt install clang
 	#apt install g++
 
-test:
-	echo "test - not implemented yet"
+test: all
+	make test -C test/
 
 pack:
 	make clean
-	zip -r icd20-hw1.zip . -x ".*" -x "*.zip"
+	zip -r icd20-hw1.zip . -x ".*" -x "*.zip" -x "test/*"
 
 .PHONY: clean
 
 clean:
+	make clean -C test/
 	$(RM) $(SCANNER) $(SCANNER:=.c)
 
 DOCKERHUB_ACCOUNT=plaslab
