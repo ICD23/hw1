@@ -18,8 +18,8 @@ prepare:
 	#apt install clang
 	#apt install g++
 
-test:
-	echo "test - not implemented yet"
+test: all
+	make -C test/
 
 pack:
 	make clean
@@ -28,6 +28,7 @@ pack:
 .PHONY: clean
 
 clean:
+	make clean -C test/
 	$(RM) $(SCANNER) $(SCANNER:=.c)
 
 DOCKERHUB_ACCOUNT=plaslab
