@@ -5,7 +5,7 @@ OBJS    := $(patsubst %.p,output/%.out,$(SRCS))
 all: output $(OBJS)
 
 output/%.out: %.p
-	./$(EXE) $^ > $@
+	@-./$(EXE) $^ > $@ 2>&1
 
 output:
 	mkdir -p $@
