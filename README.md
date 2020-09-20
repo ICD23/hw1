@@ -36,6 +36,11 @@ You need provide two make commands for us to judge your work:
 
 We have provided these commands in the Makefile, feel free to modify them according your needs.
 
+# Test
+
+You can use the command `make test` for testing, and we will use the original test case result as your score, but the `test/` dir will be replaced when grading.
+
+
 # Submission
 
 You can use the `make pack` command to zip your work, and upload it to new E3.
