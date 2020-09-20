@@ -1,0 +1,82 @@
+   0-th token(type:KEYWORD   -300) on line    1,   1 : PROGRAM
+   1-th token(type:IDENTIFIER-500) on line    1,   9 : mytest
+   2-th token(type:KEYWORD   -400) on line    1,  15 : (
+   3-th token(type:IDENTIFIER-500) on line    1,  16 : input
+   4-th token(type:KEYWORD   -404) on line    1,  21 : ,
+   5-th token(type:IDENTIFIER-500) on line    1,  23 : output
+   6-th token(type:KEYWORD   -404) on line    1,  29 : ,
+   7-th token(type:IDENTIFIER-500) on line    1,  31 : error
+   8-th token(type:KEYWORD   -401) on line    1,  36 : )
+   9-th token(type:KEYWORD   -402) on line    1,  38 : ;
+[INFO ] line    3:  4 comment string //incorrect symbols test
+
+  10-th token(type:KEYWORD   -301) on line    4,   4 : var
+  11-th token(type:IDENTIFIER-500) on line    4,   8 : a
+  12-th token(type:KEYWORD   -404) on line    4,   9 : ,
+  13-th token(type:NUMBER    -501) on line    4,  11 : 0
+  14-th token(type:IDENTIFIER-500) on line    4,  12 : aa
+  15-th token(type:KEYWORD   -404) on line    4,  14 : ,
+  16-th token(type:IDENTIFIER-500) on line    4,  16 : bb
+  17-th token(type:KEYWORD   -403) on line    4,  18 : :
+  18-th token(type:KEYWORD   -304) on line    4,  20 : integer
+  19-th token(type:KEYWORD   -402) on line    4,  27 : ;
+  20-th token(type:KEYWORD   -301) on line    5,   4 : var
+  21-th token(type:IDENTIFIER-500) on line    5,   8 : gg
+  22-th token(type:KEYWORD   -404) on line    5,  10 : ,
+  23-th token(type:IDENTIFIER-500) on line    5,  12 : hh
+  24-th token(type:KEYWORD   -404) on line    5,  14 : ,
+  25-th token(type:IDENTIFIER-500) on line    5,  16 : mm
+  26-th token(type:KEYWORD   -404) on line    5,  18 : ,
+  27-th token(type:IDENTIFIER-500) on line    5,  20 : pp
+  28-th token(type:KEYWORD   -404) on line    5,  22 : ,
+  29-th token(type:IDENTIFIER-500) on line    5,  24 : pp
+[ERROR] line    5: 26 lexical analyzer error @
+[ERROR] line    5: 27 lexical analyzer error $
+  30-th token(type:NUMBER    -501) on line    5,  28 : 5
+  31-th token(type:KEYWORD   -403) on line    5,  29 : :
+  32-th token(type:KEYWORD   -305) on line    5,  31 : real
+  33-th token(type:KEYWORD   -402) on line    5,  35 : ;
+[INFO ] line    7:  4 comment string start
+/* this is a very long comment and includes letter 
+       /*  and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`12345  */
+    67890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB  */
+[INFO ] line    9: 76 comment string end
+  34-th token(type:KEYWORD   -309) on line   11,   4 : begin
+  35-th token(type:IDENTIFIER-500) on line   12,   7 : str
+  36-th token(type:KEYWORD   -409) on line   12,  11 : :=
+  37-th token(type:STRING    -503) on line   12,  14 : 'This is a srting!!'
+  38-th token(type:KEYWORD   -402) on line   12,  34 : ;
+  39-th token(type:IDENTIFIER-500) on line   13,   7 : str2
+  40-th token(type:KEYWORD   -409) on line   13,  12 : :=
+  41-th token(type:STRING    -503) on line   13,  15 : "  This is a srting,too!!  "
+  42-th token(type:KEYWORD   -402) on line   13,  43 : ;
+  43-th token(type:IDENTIFIER-500) on line   14,   7 : str3
+  44-th token(type:KEYWORD   -409) on line   14,  12 : :=
+  45-th token(type:STRING    -503) on line   14,  15 : ""
+  46-th token(type:KEYWORD   -402) on line   14,  17 : ;
+  47-th token(type:IDENTIFIER-500) on line   15,   7 : str4
+  48-th token(type:KEYWORD   -409) on line   15,  12 : :=
+  49-th token(type:STRING    -503) on line   15,  15 : "adc"
+  50-th token(type:STRING    -503) on line   15,  20 : "def"
+  51-th token(type:KEYWORD   -402) on line   15,  25 : ;
+  52-th token(type:IDENTIFIER-500) on line   16,   7 : str4
+  53-th token(type:KEYWORD   -409) on line   16,  12 : :=
+  54-th token(type:STRING    -503) on line   17,  15 : "cross 
+         line string"
+  55-th token(type:KEYWORD   -402) on line   17,  45 : ;
+  56-th token(type:IDENTIFIER-500) on line   18,   7 : str5
+  57-th token(type:KEYWORD   -409) on line   18,  12 : :=
+[ERROR] line   18: 15 runaway string "cross 
+  58-th token(type:IDENTIFIER-500) on line   19,  10 : line
+  59-th token(type:KEYWORD   -306) on line   19,  15 : string
+  60-th token(type:KEYWORD   -402) on line   19,  21 : ;
+  61-th token(type:IDENTIFIER-500) on line   20,   7 : a
+  62-th token(type:KEYWORD   -409) on line   20,   9 : :=
+  63-th token(type:NUMBER    -501) on line   20,  12 : 5
+  64-th token(type:KEYWORD   -410) on line   20,  14 : +
+  65-th token(type:IDENTIFIER-500) on line   20,  15 : bb
+  66-th token(type:KEYWORD   -402) on line   20,  17 : ;
+  67-th token(type:KEYWORD   -310) on line   21,   4 : end
+  68-th token(type:KEYWORD   -407) on line   21,   7 : .
+[INFO ] line   21: 11 comment string // this is the end of the program
+

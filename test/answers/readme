@@ -1,0 +1,66 @@
+# compiler-f20 homework
+
+會分成下述三個部份，第一個部份是關於作業說明，第二個部份是我們要如何使用 Makefile 方便大家進行作業撰寫，並且依照這個方式進行評分，同時提供 docker image 以利學生進行作業環境設置，第三個部分是如何安裝 docker。
+
+Windows 的用戶建議觀看第三部分對於安裝 docker 的部分，我們有提供操作流程影片方便 Windows 用戶了解。
+
+1. 作業說明:
+
+    作業描述請參照 e3 上提供的 sample code 和 specification，學生需從 e3 上下載。我們在 GitHub 提供了模板，請大家照著提供的模板撰寫。最後把 code 打包上傳回 e3。
+
+2. 作業撰寫：
+
+    基本環境會提供 [git repository](https://github.com/ICD20) 和一個 [docker image](https://hub.docker.com/search?q=plaslab&type=image) 給大家使用，
+    我們評分上基本就是使用這個 image，如果要使用其他工具的話，
+    請把套件安裝的指令直接寫在 Makefile 裡面，並確定此 Ubuntu image 可以運行。
+
+    最基本要求就是 project 根目錄下必須有個 Makefile，
+    使用 `make` 指令能編出指定名稱的 binary 和 `make prepare` 準備環境即可。如果沒有額外要裝的東西還是要提供 `make prepare`，例如：
+   ```Makefile
+   prepare:
+      #nothing to prepare
+   ```
+    在目前提供的 makefile 中，可以使用 `make prepare` 進行 clang 以及 g++ 的安裝，可以參考現在的 makefile 更改你需要的安裝指令。
+    測資的部份會使用和 sample code 一樣的 argv 進行輸入。
+    （符合這個需求的話，上述 docker 和 git 都可忽略）
+
+詳細的使用方法請參照該 repository 的 [README](https://github.com/ICD20/hw1)。
+
+[![asciicast](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ.svg)](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ)
+
+
+目前 GitHub 連結：https://github.com/ICD20
+
+3. docker 安裝
+
+詳細的安裝可以在 docker 的官方文件：https://docs.docker.com/get-docker/ 中看到，而這裡會簡述一下在 Linux 中的部分，以及 Windows 用戶要如何安裝。
+
+- Linux: (以 Arch linux 為例)
+```
+sudo pacman -S docker # install the docker from package
+
+systemctl start docker.service # start the docker service
+systemctl enable docker.service # start the docker service
+
+gpasswd -a username docker # you should change the `username` into yours
+
+newgrp docker # update the newgroup
+```
+
+- Linux: (以 Ubuntu 為例)
+```
+sudo apt install docker.io
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+sudo usermod -aG docker username
+
+# and re-login the system
+```
+
+- Widnows:
+
+由於 docker 在 Windows 上的安裝可能相對繁瑣，這裡提供完整的操作流程影片供 Windows 的用戶觀看，了解怎麼使用整個 project:
+
+{%youtube HddnQnU4zXk %}
