@@ -12,6 +12,15 @@ bash activate.sh # start the container, it will auto-pull the image if you didn'
 
 [![asciicast](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ.svg)](https://asciinema.org/a/27ZqPcEUYkA6Ll0EqjyvlC5YQ)
 
+On CSCC workstation:
+```
+bash cscc-activate.sh
+```
+
+More information about cscc docker suuport, please refer (dosh)[https://cscc.cs.nctu.edu.tw/workstation-dosh-guide]
+
+[![asciicast](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3.svg)](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3)
+
 On Windows:
 ```
 activate.bat
