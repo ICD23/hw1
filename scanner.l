@@ -136,7 +136,7 @@ NQUOTE [^']
 {M}{O}{D}                    return(MOD);
 {N}{I}{L}                    return(NIL);
 {N}{O}{T}                    return(NOT);
-{O}{F}                       return(OF); 
+{O}{F}                       return(OF);
 {O}{R}                       return(OR);
 {O}{T}{H}{E}{R}{W}{I}{S}{E}  return(OTHERWISE);
 {P}{A}{C}{K}{E}{D}           return(PACKED);
@@ -221,9 +221,10 @@ int main(int argc, char** argv) {
   yyin = fopen(argv[1], "r");
   for (int i = 0; ; i++) {
     int tok = yylex();
-    fprintf(stderr, "%3d-th token(type:%d) on line %d : %s\n", i, tok,line_no, yytext);
+    int col = 0;
+    fprintf(stderr, "%4d-th token(type:TOKEN     ) on line %4d, %3d : %s\n", i, line_no, col, yytext);
   }
-  
+
   return 0;
 } /* end of main */
 
@@ -231,4 +232,3 @@ yywrap() {
   fclose(yyin);
   exit(1);
 }
-
