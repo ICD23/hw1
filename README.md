@@ -17,7 +17,7 @@ On CSCC workstation:
 bash cscc-activate.sh
 ```
 
-More information about cscc docker suuport, please refer (dosh)[https://cscc.cs.nctu.edu.tw/workstation-dosh-guide]
+More information about cscc docker suuport, please refer [dosh](https://cscc.cs.nctu.edu.tw/workstation-dosh-guide)
 
 [![asciicast](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3.svg)](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3)
 
