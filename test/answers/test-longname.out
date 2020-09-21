@@ -1,0 +1,37 @@
+   0-th token(type:KEYWORD   -300) on line    1,   1 : PROGRAM
+   1-th token(type:IDENTIFIER-500) on line    1,   9 : foo
+   2-th token(type:KEYWORD   -400) on line    1,  12 : (
+   3-th token(type:IDENTIFIER-500) on line    1,  13 : input
+   4-th token(type:KEYWORD   -404) on line    1,  18 : ,
+   5-th token(type:IDENTIFIER-500) on line    1,  20 : output
+   6-th token(type:KEYWORD   -404) on line    1,  26 : ,
+   7-th token(type:IDENTIFIER-500) on line    1,  28 : error
+   8-th token(type:KEYWORD   -401) on line    1,  33 : )
+   9-th token(type:KEYWORD   -402) on line    1,  35 : ;
+[INFO ] line    2:  4 comment string // this test checks a very long variable name.
+
+[INFO ] line    3:  4 comment string // a very long variable name 
+
+  10-th token(type:KEYWORD   -301) on line    4,   4 : var
+  11-th token(type:IDENTIFIER-500) on line    4,   8 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
+  12-th token(type:KEYWORD   -403) on line    4, 108 : :
+  13-th token(type:KEYWORD   -304) on line    4, 110 : integer
+  14-th token(type:KEYWORD   -402) on line    4, 117 : ;
+  15-th token(type:KEYWORD   -309) on line    6,   4 : begin
+[INFO ] line    7:  7 comment string // very long variable names
+
+  16-th token(type:IDENTIFIER-500) on line    8,   7 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
+  17-th token(type:KEYWORD   -409) on line    9,   7 : :=
+  18-th token(type:NUMBER    -501) on line    9,  10 : 3
+  19-th token(type:KEYWORD   -410) on line    9,  12 : +
+  20-th token(type:NUMBER    -501) on line    9,  14 : 9
+  21-th token(type:KEYWORD   -402) on line    9,  15 : ;
+  22-th token(type:IDENTIFIER-500) on line   11,   7 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
+  23-th token(type:KEYWORD   -409) on line   12,   7 : :=
+  24-th token(type:IDENTIFIER-500) on line   13,   7 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
+  25-th token(type:KEYWORD   -410) on line   14,   7 : +
+  26-th token(type:NUMBER    -501) on line   14,   9 : 9
+  27-th token(type:KEYWORD   -310) on line   16,   4 : end
+  28-th token(type:KEYWORD   -407) on line   16,   7 : .
+[INFO ] line   16: 11 comment string // this is the end of the program
+

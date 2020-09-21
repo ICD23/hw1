@@ -1,0 +1,569 @@
+[INFO ] line    1:  1 comment string // This test program includes many errors.
+
+[INFO ] line    2:  1 comment string // Check if your compiler can catch all the errors and the quality of the error messages.
+
+[INFO ] line    3:  1 comment string // 20142021
+
+   0-th token(type:KEYWORD   -300) on line    5,   1 : PROGRAM
+   1-th token(type:IDENTIFIER-500) on line    5,   9 : foo
+   2-th token(type:KEYWORD   -400) on line    5,  12 : (
+   3-th token(type:IDENTIFIER-500) on line    5,  13 : input
+   4-th token(type:KEYWORD   -404) on line    5,  18 : ,
+   5-th token(type:IDENTIFIER-500) on line    5,  20 : output
+   6-th token(type:KEYWORD   -404) on line    5,  26 : ,
+   7-th token(type:IDENTIFIER-500) on line    5,  28 : error
+   8-th token(type:KEYWORD   -401) on line    5,  33 : )
+   9-th token(type:KEYWORD   -402) on line    5,  35 : ;
+[INFO ] line    6:  4 comment string // variable declaraions
+
+  10-th token(type:KEYWORD   -301) on line    7,   4 : var
+  11-th token(type:IDENTIFIER-500) on line    7,   8 : a
+  12-th token(type:KEYWORD   -404) on line    7,   9 : ,
+  13-th token(type:IDENTIFIER-500) on line    7,  11 : b
+  14-th token(type:KEYWORD   -404) on line    7,  12 : ,
+  15-th token(type:IDENTIFIER-500) on line    7,  14 : c
+  16-th token(type:KEYWORD   -403) on line    7,  15 : :
+  17-th token(type:KEYWORD   -304) on line    7,  17 : integer
+  18-th token(type:KEYWORD   -402) on line    7,  24 : ;
+  19-th token(type:KEYWORD   -301) on line    8,   4 : var
+  20-th token(type:IDENTIFIER-500) on line    8,   8 : d
+  21-th token(type:KEYWORD   -404) on line    8,   9 : ,
+  22-th token(type:IDENTIFIER-500) on line    8,  11 : e
+  23-th token(type:KEYWORD   -403) on line    8,  12 : :
+  24-th token(type:KEYWORD   -302) on line    8,  14 : array
+  25-th token(type:KEYWORD   -405) on line    8,  20 : [
+  26-th token(type:NUMBER    -501) on line    8,  22 : 1
+  27-th token(type:KEYWORD   -408) on line    8,  24 : ..
+  28-th token(type:NUMBER    -501) on line    8,  27 : 10
+  29-th token(type:KEYWORD   -406) on line    8,  30 : ]
+  30-th token(type:KEYWORD   -303) on line    8,  32 : of
+  31-th token(type:KEYWORD   -304) on line    8,  35 : integer
+  32-th token(type:KEYWORD   -402) on line    8,  42 : ;
+  33-th token(type:KEYWORD   -301) on line    9,   4 : var
+  34-th token(type:IDENTIFIER-500) on line    9,   8 : g
+  35-th token(type:KEYWORD   -404) on line    9,   9 : ,
+  36-th token(type:IDENTIFIER-500) on line    9,  11 : h
+  37-th token(type:KEYWORD   -403) on line    9,  12 : :
+  38-th token(type:KEYWORD   -305) on line    9,  14 : real
+  39-th token(type:KEYWORD   -402) on line    9,  18 : ;
+  40-th token(type:KEYWORD   -301) on line   10,   4 : var
+  41-th token(type:IDENTIFIER-500) on line   10,   8 : k
+  42-th token(type:KEYWORD   -403) on line   10,   9 : :
+  43-th token(type:KEYWORD   -302) on line   10,  11 : array
+  44-th token(type:KEYWORD   -405) on line   10,  17 : [
+  45-th token(type:NUMBER    -501) on line   10,  19 : 23
+  46-th token(type:KEYWORD   -408) on line   10,  22 : ..
+  47-th token(type:NUMBER    -501) on line   10,  25 : 57
+  48-th token(type:KEYWORD   -406) on line   10,  28 : ]
+  49-th token(type:KEYWORD   -303) on line   10,  30 : of
+  50-th token(type:KEYWORD   -302) on line   10,  33 : array
+  51-th token(type:KEYWORD   -405) on line   10,  39 : [
+  52-th token(type:NUMBER    -501) on line   10,  41 : 23
+  53-th token(type:KEYWORD   -408) on line   10,  44 : ..
+  54-th token(type:NUMBER    -501) on line   10,  47 : 57
+  55-th token(type:KEYWORD   -406) on line   10,  50 : ]
+  56-th token(type:KEYWORD   -303) on line   10,  52 : of
+  57-th token(type:KEYWORD   -305) on line   10,  55 : real
+  58-th token(type:KEYWORD   -402) on line   10,  59 : ;
+  59-th token(type:KEYWORD   -301) on line   11,   4 : var
+  60-th token(type:IDENTIFIER-500) on line   11,   8 : a
+  61-th token(type:KEYWORD   -403) on line   11,   9 : :
+  62-th token(type:KEYWORD   -302) on line   11,  11 : array
+  63-th token(type:KEYWORD   -405) on line   11,  17 : [
+  64-th token(type:NUMBER    -501) on line   11,  19 : 23
+  65-th token(type:KEYWORD   -408) on line   11,  22 : ..
+  66-th token(type:NUMBER    -501) on line   11,  25 : 57
+  67-th token(type:KEYWORD   -406) on line   11,  28 : ]
+  68-th token(type:KEYWORD   -303) on line   11,  30 : of
+  69-th token(type:KEYWORD   -302) on line   11,  33 : array
+  70-th token(type:KEYWORD   -405) on line   11,  39 : [
+  71-th token(type:NUMBER    -501) on line   11,  41 : 23
+  72-th token(type:KEYWORD   -408) on line   11,  44 : ..
+  73-th token(type:NUMBER    -501) on line   11,  47 : 57
+  74-th token(type:KEYWORD   -406) on line   11,  50 : ]
+  75-th token(type:KEYWORD   -303) on line   11,  52 : of
+  76-th token(type:KEYWORD   -305) on line   11,  55 : real
+  77-th token(type:KEYWORD   -402) on line   11,  59 : ;
+[INFO ] line   11: 62 comment string // WRONG 1: redefined variables
+
+[INFO ] line   14:  4 comment string // procedure and function declarations
+
+  78-th token(type:KEYWORD   -308) on line   15,   4 : procedure
+  79-th token(type:IDENTIFIER-500) on line   15,  14 : sort
+  80-th token(type:KEYWORD   -400) on line   15,  18 : (
+  81-th token(type:IDENTIFIER-500) on line   15,  19 : a
+  82-th token(type:KEYWORD   -403) on line   15,  20 : :
+  83-th token(type:KEYWORD   -302) on line   15,  22 : array
+  84-th token(type:KEYWORD   -405) on line   15,  28 : [
+  85-th token(type:NUMBER    -501) on line   15,  30 : 1
+  86-th token(type:KEYWORD   -408) on line   15,  32 : ..
+  87-th token(type:NUMBER    -501) on line   15,  35 : 10
+  88-th token(type:KEYWORD   -406) on line   15,  38 : ]
+  89-th token(type:KEYWORD   -303) on line   15,  40 : of
+  90-th token(type:KEYWORD   -304) on line   15,  43 : integer
+  91-th token(type:KEYWORD   -401) on line   15,  50 : )
+  92-th token(type:KEYWORD   -402) on line   15,  51 : ;
+  93-th token(type:KEYWORD   -301) on line   16,   7 : var
+  94-th token(type:IDENTIFIER-500) on line   16,  11 : a
+  95-th token(type:KEYWORD   -404) on line   16,  12 : ,
+  96-th token(type:IDENTIFIER-500) on line   16,  14 : b
+  97-th token(type:KEYWORD   -404) on line   16,  15 : ,
+  98-th token(type:IDENTIFIER-500) on line   16,  17 : c
+  99-th token(type:KEYWORD   -403) on line   16,  18 : :
+ 100-th token(type:KEYWORD   -304) on line   16,  20 : integer
+ 101-th token(type:KEYWORD   -402) on line   16,  27 : ;
+[INFO ] line   16: 29 comment string // duplicated declaration
+
+ 102-th token(type:KEYWORD   -309) on line   17,   7 : begin
+ 103-th token(type:IDENTIFIER-500) on line   18,   9 : e
+ 104-th token(type:KEYWORD   -409) on line   18,  11 : :=
+ 105-th token(type:IDENTIFIER-500) on line   18,  14 : a
+ 106-th token(type:KEYWORD   -410) on line   18,  16 : +
+ 107-th token(type:IDENTIFIER-500) on line   18,  18 : d
+[INFO ] line   18: 27 comment string // WRONG 2: a is an int variable while d is an array.
+
+ 108-th token(type:IDENTIFIER-500) on line   19,   2 : a
+ 109-th token(type:KEYWORD   -409) on line   19,   4 : :=
+ 110-th token(type:IDENTIFIER-500) on line   19,   7 : qqq
+ 111-th token(type:KEYWORD   -410) on line   19,  11 : -
+ 112-th token(type:IDENTIFIER-500) on line   19,  13 : rrr
+ 113-th token(type:KEYWORD   -402) on line   19,  16 : ;
+[INFO ] line   19: 20 comment string // WRONG 3: qqq and rrr are undefined variables
+
+ 114-th token(type:IDENTIFIER-500) on line   20,   9 : d
+ 115-th token(type:KEYWORD   -409) on line   20,  11 : :=
+ 116-th token(type:IDENTIFIER-500) on line   20,  14 : f
+ 117-th token(type:KEYWORD   -400) on line   20,  15 : (
+ 118-th token(type:IDENTIFIER-500) on line   20,  16 : k
+ 119-th token(type:KEYWORD   -404) on line   20,  17 : ,
+ 120-th token(type:IDENTIFIER-500) on line   20,  19 : e
+ 121-th token(type:KEYWORD   -401) on line   20,  20 : )
+ 122-th token(type:KEYWORD   -402) on line   20,  21 : ;
+[INFO ] line   20: 27 comment string // WRONG 4: f is undefined function
+
+ 123-th token(type:KEYWORD   -310) on line   21,   7 : end
+ 124-th token(type:KEYWORD   -402) on line   21,  10 : ;
+ 125-th token(type:KEYWORD   -307) on line   24,   4 : function
+ 126-th token(type:IDENTIFIER-500) on line   24,  14 : addition
+ 127-th token(type:KEYWORD   -400) on line   24,  22 : (
+ 128-th token(type:IDENTIFIER-500) on line   24,  23 : a
+ 129-th token(type:KEYWORD   -404) on line   24,  24 : ,
+ 130-th token(type:IDENTIFIER-500) on line   24,  26 : b
+ 131-th token(type:KEYWORD   -403) on line   24,  27 : :
+ 132-th token(type:KEYWORD   -304) on line   24,  29 : integer
+ 133-th token(type:KEYWORD   -401) on line   24,  36 : )
+ 134-th token(type:KEYWORD   -403) on line   24,  38 : :
+ 135-th token(type:KEYWORD   -304) on line   24,  40 : integer
+ 136-th token(type:KEYWORD   -402) on line   24,  47 : ;
+ 137-th token(type:KEYWORD   -301) on line   25,   7 : var
+ 138-th token(type:IDENTIFIER-500) on line   25,  11 : c
+ 139-th token(type:KEYWORD   -403) on line   25,  12 : :
+ 140-th token(type:KEYWORD   -304) on line   25,  14 : integer
+ 141-th token(type:KEYWORD   -402) on line   25,  21 : ;
+[INFO ] line   25: 24 comment string // local declaration
+
+ 142-th token(type:KEYWORD   -309) on line   26,   7 : begin
+ 143-th token(type:IDENTIFIER-500) on line   27,  10 : addition
+ 144-th token(type:KEYWORD   -409) on line   27,  19 : :=
+ 145-th token(type:IDENTIFIER-500) on line   27,  22 : a
+ 146-th token(type:KEYWORD   -410) on line   27,  24 : +
+ 147-th token(type:IDENTIFIER-500) on line   27,  26 : b
+[INFO ] line   27: 30 comment string // this is the return value
+
+ 148-th token(type:KEYWORD   -310) on line   28,   7 : end
+ 149-th token(type:KEYWORD   -402) on line   28,  10 : ;
+ 150-th token(type:KEYWORD   -307) on line   31,   4 : function
+ 151-th token(type:IDENTIFIER-500) on line   31,  14 : addition
+ 152-th token(type:KEYWORD   -400) on line   31,  22 : (
+ 153-th token(type:IDENTIFIER-500) on line   31,  23 : c
+ 154-th token(type:KEYWORD   -404) on line   31,  24 : ,
+ 155-th token(type:IDENTIFIER-500) on line   31,  26 : d
+ 156-th token(type:KEYWORD   -403) on line   31,  27 : :
+ 157-th token(type:KEYWORD   -304) on line   31,  29 : integer
+ 158-th token(type:KEYWORD   -401) on line   31,  36 : )
+ 159-th token(type:KEYWORD   -403) on line   31,  38 : :
+ 160-th token(type:KEYWORD   -304) on line   31,  40 : integer
+ 161-th token(type:KEYWORD   -402) on line   31,  47 : ;
+[INFO ] line   32:  4 comment string // WRONG 5: redefine a function, even though the arguments have different names
+
+ 162-th token(type:KEYWORD   -301) on line   33,   7 : var
+ 163-th token(type:IDENTIFIER-500) on line   33,  11 : e
+ 164-th token(type:KEYWORD   -403) on line   33,  12 : :
+ 165-th token(type:KEYWORD   -304) on line   33,  14 : integer
+ 166-th token(type:KEYWORD   -402) on line   33,  21 : ;
+[INFO ] line   33: 24 comment string // local declaration
+
+ 167-th token(type:KEYWORD   -309) on line   34,   7 : begin
+ 168-th token(type:IDENTIFIER-500) on line   35,  10 : addition
+ 169-th token(type:KEYWORD   -409) on line   35,  19 : :=
+ 170-th token(type:IDENTIFIER-500) on line   35,  22 : c
+ 171-th token(type:KEYWORD   -410) on line   35,  24 : +
+ 172-th token(type:IDENTIFIER-500) on line   35,  26 : d
+[INFO ] line   35: 30 comment string // this is the return value
+
+ 173-th token(type:KEYWORD   -310) on line   36,   7 : end
+ 174-th token(type:KEYWORD   -402) on line   36,  10 : ;
+ 175-th token(type:KEYWORD   -307) on line   39,   4 : function
+ 176-th token(type:IDENTIFIER-500) on line   39,  14 : addition
+ 177-th token(type:KEYWORD   -400) on line   39,  22 : (
+ 178-th token(type:IDENTIFIER-500) on line   39,  23 : a
+ 179-th token(type:KEYWORD   -404) on line   39,  24 : ,
+ 180-th token(type:IDENTIFIER-500) on line   39,  26 : b
+ 181-th token(type:KEYWORD   -403) on line   39,  27 : :
+ 182-th token(type:KEYWORD   -305) on line   39,  29 : real
+ 183-th token(type:KEYWORD   -401) on line   39,  33 : )
+ 184-th token(type:KEYWORD   -403) on line   39,  35 : :
+ 185-th token(type:KEYWORD   -305) on line   39,  37 : real
+ 186-th token(type:KEYWORD   -402) on line   39,  41 : ;
+[INFO ] line   40:  4 comment string // WARNING 6: Does you compiler allow over-loading? 
+
+ 187-th token(type:KEYWORD   -301) on line   41,   7 : var
+ 188-th token(type:IDENTIFIER-500) on line   41,  11 : c
+ 189-th token(type:KEYWORD   -403) on line   41,  12 : :
+ 190-th token(type:KEYWORD   -304) on line   41,  14 : integer
+ 191-th token(type:KEYWORD   -402) on line   41,  21 : ;
+[INFO ] line   41: 24 comment string // local declaration
+
+ 192-th token(type:KEYWORD   -309) on line   42,   7 : begin
+ 193-th token(type:IDENTIFIER-500) on line   43,  10 : addition
+ 194-th token(type:KEYWORD   -409) on line   43,  19 : :=
+ 195-th token(type:IDENTIFIER-500) on line   43,  22 : a
+ 196-th token(type:KEYWORD   -410) on line   43,  24 : +
+ 197-th token(type:IDENTIFIER-500) on line   43,  26 : b
+[INFO ] line   43: 30 comment string // this is the return value
+
+ 198-th token(type:KEYWORD   -310) on line   44,   7 : end
+ 199-th token(type:KEYWORD   -402) on line   44,  10 : ;
+ 200-th token(type:KEYWORD   -309) on line   47,   4 : begin
+ 201-th token(type:IDENTIFIER-500) on line   48,   7 : a
+ 202-th token(type:KEYWORD   -409) on line   48,   9 : :=
+ 203-th token(type:NUMBER    -501) on line   48,  12 : 1
+ 204-th token(type:KEYWORD   -402) on line   48,  13 : ;
+ 205-th token(type:KEYWORD   -314) on line   49,   7 : while
+ 206-th token(type:IDENTIFIER-500) on line   49,  13 : a
+ 207-th token(type:KEYWORD   -412) on line   49,  15 : <
+ 208-th token(type:NUMBER    -501) on line   49,  17 : 10
+ 209-th token(type:KEYWORD   -315) on line   49,  20 : do
+ 210-th token(type:KEYWORD   -309) on line   50,   7 : begin
+ 211-th token(type:IDENTIFIER-500) on line   51,  10 : sum
+ 212-th token(type:KEYWORD   -409) on line   51,  14 : :=
+ 213-th token(type:IDENTIFIER-500) on line   51,  17 : sum
+ 214-th token(type:KEYWORD   -410) on line   51,  21 : +
+ 215-th token(type:IDENTIFIER-500) on line   51,  23 : a
+ 216-th token(type:KEYWORD   -402) on line   51,  24 : ;
+ 217-th token(type:IDENTIFIER-500) on line   52,  10 : a
+ 218-th token(type:KEYWORD   -409) on line   52,  14 : :=
+ 219-th token(type:IDENTIFIER-500) on line   52,  17 : a
+ 220-th token(type:KEYWORD   -410) on line   52,  19 : +
+ 221-th token(type:NUMBER    -501) on line   52,  21 : 1
+ 222-th token(type:KEYWORD   -310) on line   53,   7 : end
+ 223-th token(type:KEYWORD   -402) on line   53,  10 : ;
+ 224-th token(type:KEYWORD   -309) on line   54,   7 : begin
+[INFO ] line   54: 14 comment string // nested compound statement
+
+ 225-th token(type:IDENTIFIER-500) on line   55,  10 : b
+ 226-th token(type:KEYWORD   -409) on line   55,  12 : :=
+ 227-th token(type:NUMBER    -501) on line   55,  15 : 1
+ 228-th token(type:KEYWORD   -402) on line   55,  16 : ;
+ 229-th token(type:KEYWORD   -314) on line   56,  10 : while
+ 230-th token(type:IDENTIFIER-500) on line   56,  16 : b
+ 231-th token(type:KEYWORD   -412) on line   56,  18 : <
+ 232-th token(type:NUMBER    -501) on line   56,  20 : 11
+ 233-th token(type:KEYWORD   -315) on line   56,  23 : do
+ 234-th token(type:KEYWORD   -309) on line   57,  10 : begin
+[INFO ] line   57: 17 comment string // array initialization
+
+ 235-th token(type:IDENTIFIER-500) on line   58,  13 : d
+ 236-th token(type:KEYWORD   -405) on line   58,  14 : [
+ 237-th token(type:IDENTIFIER-500) on line   58,  15 : b
+ 238-th token(type:KEYWORD   -406) on line   58,  16 : ]
+ 239-th token(type:KEYWORD   -409) on line   58,  18 : :=
+ 240-th token(type:IDENTIFIER-500) on line   58,  21 : b
+ 241-th token(type:KEYWORD   -410) on line   58,  23 : +
+ 242-th token(type:IDENTIFIER-500) on line   58,  25 : b
+ 243-th token(type:KEYWORD   -411) on line   58,  27 : *
+ 244-th token(type:KEYWORD   -400) on line   58,  29 : (
+ 245-th token(type:IDENTIFIER-500) on line   58,  30 : b
+ 246-th token(type:KEYWORD   -410) on line   58,  32 : -
+ 247-th token(type:NUMBER    -501) on line   58,  34 : 1
+ 248-th token(type:KEYWORD   -401) on line   58,  35 : )
+ 249-th token(type:KEYWORD   -402) on line   58,  36 : ;
+ 250-th token(type:IDENTIFIER-500) on line   59,  13 : b
+ 251-th token(type:KEYWORD   -409) on line   59,  15 : :=
+ 252-th token(type:IDENTIFIER-500) on line   59,  18 : b
+ 253-th token(type:KEYWORD   -410) on line   59,  20 : +
+ 254-th token(type:NUMBER    -501) on line   59,  21 : 1
+ 255-th token(type:KEYWORD   -310) on line   60,  10 : end
+ 256-th token(type:KEYWORD   -402) on line   60,  13 : ;
+ 257-th token(type:IDENTIFIER-500) on line   61,  10 : sort
+ 258-th token(type:KEYWORD   -400) on line   61,  14 : (
+ 259-th token(type:IDENTIFIER-500) on line   61,  15 : d
+ 260-th token(type:KEYWORD   -401) on line   61,  16 : )
+[INFO ] line   61: 20 comment string // a procedure call          
+
+ 261-th token(type:KEYWORD   -310) on line   62,   7 : end
+ 262-th token(type:KEYWORD   -402) on line   62,  10 : ;
+ 263-th token(type:IDENTIFIER-500) on line   63,   7 : k
+ 264-th token(type:KEYWORD   -405) on line   63,   8 : [
+ 265-th token(type:NUMBER    -501) on line   63,   9 : 25
+ 266-th token(type:KEYWORD   -406) on line   63,  11 : ]
+ 267-th token(type:KEYWORD   -405) on line   63,  12 : [
+ 268-th token(type:NUMBER    -501) on line   63,  13 : 26
+ 269-th token(type:KEYWORD   -406) on line   63,  15 : ]
+ 270-th token(type:KEYWORD   -409) on line   63,  17 : :=
+ 271-th token(type:NUMBER    -501) on line   63,  20 : 3
+ 272-th token(type:KEYWORD   -402) on line   63,  21 : ;
+[INFO ] line   63: 30 comment string // wrong element type
+
+ 273-th token(type:IDENTIFIER-500) on line   64,   7 : k
+ 274-th token(type:KEYWORD   -405) on line   64,   8 : [
+ 275-th token(type:NUMBER    -501) on line   64,   9 : 25
+ 276-th token(type:KEYWORD   -406) on line   64,  11 : ]
+ 277-th token(type:KEYWORD   -405) on line   64,  12 : [
+ 278-th token(type:NUMBER    -501) on line   64,  13 : 26
+ 279-th token(type:KEYWORD   -406) on line   64,  15 : ]
+ 280-th token(type:KEYWORD   -409) on line   64,  17 : :=
+ 281-th token(type:NUMBER    -502) on line   64,  20 : 3.14
+ 282-th token(type:KEYWORD   -402) on line   64,  24 : ;
+[INFO ] line   64: 30 comment string // good
+
+ 283-th token(type:IDENTIFIER-500) on line   65,   7 : k
+ 284-th token(type:KEYWORD   -405) on line   65,   8 : [
+ 285-th token(type:NUMBER    -501) on line   65,   9 : 25
+ 286-th token(type:KEYWORD   -406) on line   65,  11 : ]
+ 287-th token(type:KEYWORD   -405) on line   65,  12 : [
+ 288-th token(type:NUMBER    -501) on line   65,  13 : 26
+ 289-th token(type:KEYWORD   -406) on line   65,  15 : ]
+ 290-th token(type:KEYWORD   -409) on line   65,  17 : :=
+ 291-th token(type:IDENTIFIER-500) on line   65,  20 : k
+ 292-th token(type:KEYWORD   -405) on line   65,  21 : [
+ 293-th token(type:NUMBER    -501) on line   65,  22 : 25
+ 294-th token(type:KEYWORD   -406) on line   65,  24 : ]
+ 295-th token(type:KEYWORD   -405) on line   65,  25 : [
+ 296-th token(type:NUMBER    -501) on line   65,  26 : 26
+ 297-th token(type:KEYWORD   -406) on line   65,  28 : ]
+ 298-th token(type:KEYWORD   -410) on line   65,  30 : +
+ 299-th token(type:NUMBER    -501) on line   65,  32 : 3
+ 300-th token(type:KEYWORD   -402) on line   65,  33 : ;
+[INFO ] line   65: 39 comment string // good
+
+ 301-th token(type:IDENTIFIER-500) on line   66,   7 : k
+ 302-th token(type:KEYWORD   -405) on line   66,   8 : [
+ 303-th token(type:NUMBER    -501) on line   66,   9 : 25
+ 304-th token(type:KEYWORD   -406) on line   66,  11 : ]
+ 305-th token(type:KEYWORD   -405) on line   66,  12 : [
+ 306-th token(type:NUMBER    -501) on line   66,  13 : 126
+ 307-th token(type:KEYWORD   -406) on line   66,  16 : ]
+ 308-th token(type:KEYWORD   -409) on line   66,  19 : :=
+ 309-th token(type:NUMBER    -502) on line   66,  22 : 3.14
+ 310-th token(type:KEYWORD   -402) on line   66,  26 : ;
+[INFO ] line   66: 30 comment string // index out of bound
+
+ 311-th token(type:IDENTIFIER-500) on line   67,   7 : k
+ 312-th token(type:KEYWORD   -405) on line   67,   8 : [
+ 313-th token(type:NUMBER    -501) on line   67,   9 : 125
+ 314-th token(type:KEYWORD   -406) on line   67,  12 : ]
+ 315-th token(type:KEYWORD   -405) on line   67,  13 : [
+ 316-th token(type:NUMBER    -501) on line   67,  14 : 26
+ 317-th token(type:KEYWORD   -406) on line   67,  16 : ]
+ 318-th token(type:KEYWORD   -409) on line   67,  19 : :=
+ 319-th token(type:NUMBER    -502) on line   67,  22 : 3.14
+ 320-th token(type:KEYWORD   -402) on line   67,  26 : ;
+[INFO ] line   67: 30 comment string // index out of bound
+
+ 321-th token(type:IDENTIFIER-500) on line   68,   7 : k
+ 322-th token(type:KEYWORD   -405) on line   68,   8 : [
+ 323-th token(type:NUMBER    -501) on line   68,   9 : 125
+ 324-th token(type:KEYWORD   -406) on line   68,  12 : ]
+ 325-th token(type:KEYWORD   -405) on line   68,  13 : [
+ 326-th token(type:NUMBER    -501) on line   68,  14 : 126
+ 327-th token(type:KEYWORD   -406) on line   68,  17 : ]
+ 328-th token(type:KEYWORD   -409) on line   68,  19 : :=
+ 329-th token(type:NUMBER    -502) on line   68,  22 : 3.14
+[INFO ] line   68: 30 comment string // index out of bound
+
+ 330-th token(type:IDENTIFIER-500) on line   69,   7 : a
+ 331-th token(type:KEYWORD   -409) on line   69,   9 : :=
+ 332-th token(type:IDENTIFIER-500) on line   69,  12 : extf
+ 333-th token(type:KEYWORD   -400) on line   69,  16 : (
+ 334-th token(type:NUMBER    -501) on line   69,  17 : 20
+ 335-th token(type:KEYWORD   -404) on line   69,  19 : ,
+ 336-th token(type:IDENTIFIER-500) on line   69,  21 : sum
+ 337-th token(type:KEYWORD   -401) on line   69,  24 : )
+ 338-th token(type:KEYWORD   -402) on line   69,  25 : ;
+[INFO ] line   69: 30 comment string // WARNING 7: can your compiler handle external functions?
+
+[INFO ] line   73:  7 comment string // Warning 8: Can you compiler handle #include
+
+[ERROR] line   74:  4 lexical analyzer error #
+ 339-th token(type:IDENTIFIER-500) on line   74,   5 : include
+ 340-th token(type:KEYWORD   -412) on line   74,  13 : <
+ 341-th token(type:IDENTIFIER-500) on line   74,  14 : abc
+ 342-th token(type:KEYWORD   -407) on line   74,  17 : .
+ 343-th token(type:IDENTIFIER-500) on line   74,  18 : h
+ 344-th token(type:KEYWORD   -412) on line   74,  19 : >
+[INFO ] line   74: 25 comment string // include
+
+ 345-th token(type:IDENTIFIER-500) on line   75,   7 : a
+ 346-th token(type:KEYWORD   -412) on line   75,   9 : =
+ 347-th token(type:IDENTIFIER-500) on line   75,  11 : bbb
+ 348-th token(type:KEYWORD   -400) on line   75,  14 : (
+ 349-th token(type:NUMBER    -501) on line   75,  15 : 20
+ 350-th token(type:KEYWORD   -404) on line   75,  17 : ,
+ 351-th token(type:IDENTIFIER-500) on line   75,  19 : sum
+ 352-th token(type:KEYWORD   -401) on line   75,  22 : )
+ 353-th token(type:KEYWORD   -402) on line   75,  23 : ;
+[INFO ] line   79:  8 comment string // Warning 9: How do your compiler handle conditional compilation?
+
+[ERROR] line   81:  7 lexical analyzer error #
+ 354-th token(type:KEYWORD   -311) on line   81,   8 : if
+[ERROR] line   81: 11 lexical analyzer error !
+ 355-th token(type:IDENTIFIER-500) on line   81,  12 : defined
+ 356-th token(type:KEYWORD   -400) on line   81,  19 : (
+ 357-th token(type:IDENTIFIER-500) on line   81,  20 : __unix__
+ 358-th token(type:KEYWORD   -401) on line   81,  28 : )
+[ERROR] line   82:  7 lexical analyzer error #
+ 359-th token(type:IDENTIFIER-500) on line   82,   8 : include
+ 360-th token(type:IDENTIFIER-500) on line   82,  16 : Long40
+ 361-th token(type:KEYWORD   -407) on line   82,  22 : .
+ 362-th token(type:IDENTIFIER-500) on line   82,  23 : h
+[ERROR] line   82: 24 lexical analyzer error ¡
+[ERROR] line   82: 25 lexical analyzer error ¨
+ 363-th token(type:IDENTIFIER-500) on line   83,   8 : k
+ 364-th token(type:KEYWORD   -405) on line   83,   9 : [
+ 365-th token(type:NUMBER    -501) on line   83,  10 : 25
+ 366-th token(type:KEYWORD   -406) on line   83,  12 : ]
+ 367-th token(type:KEYWORD   -405) on line   83,  13 : [
+ 368-th token(type:NUMBER    -501) on line   83,  14 : 26
+ 369-th token(type:KEYWORD   -406) on line   83,  16 : ]
+ 370-th token(type:KEYWORD   -409) on line   83,  18 : :=
+ 371-th token(type:IDENTIFIER-500) on line   83,  21 : k
+ 372-th token(type:KEYWORD   -405) on line   83,  22 : [
+ 373-th token(type:NUMBER    -501) on line   83,  23 : 25
+ 374-th token(type:KEYWORD   -406) on line   83,  25 : ]
+ 375-th token(type:KEYWORD   -405) on line   83,  26 : [
+ 376-th token(type:NUMBER    -501) on line   83,  27 : 26
+ 377-th token(type:KEYWORD   -406) on line   83,  29 : ]
+ 378-th token(type:KEYWORD   -410) on line   83,  31 : +
+ 379-th token(type:NUMBER    -501) on line   83,  33 : 5
+ 380-th token(type:KEYWORD   -402) on line   83,  34 : ;
+[INFO ] line   83: 40 comment string // good
+
+[ERROR] line   84:  7 lexical analyzer error #
+ 381-th token(type:IDENTIFIER-500) on line   84,   8 : elif
+ 382-th token(type:IDENTIFIER-500) on line   84,  13 : defined
+ 383-th token(type:KEYWORD   -400) on line   84,  20 : (
+ 384-th token(type:IDENTIFIER-500) on line   84,  21 : _TMS320C6200
+ 385-th token(type:KEYWORD   -401) on line   84,  33 : )
+[ERROR] line   85:  7 lexical analyzer error #
+ 386-th token(type:IDENTIFIER-500) on line   85,   8 : define
+ 387-th token(type:IDENTIFIER-500) on line   85,  15 : assert
+ 388-th token(type:KEYWORD   -400) on line   85,  21 : (
+ 389-th token(type:IDENTIFIER-500) on line   85,  22 : a
+ 390-th token(type:KEYWORD   -401) on line   85,  23 : )
+ 391-th token(type:IDENTIFIER-500) on line   86,   8 : k
+ 392-th token(type:KEYWORD   -405) on line   86,   9 : [
+ 393-th token(type:NUMBER    -501) on line   86,  10 : 25
+ 394-th token(type:KEYWORD   -406) on line   86,  12 : ]
+ 395-th token(type:KEYWORD   -405) on line   86,  13 : [
+ 396-th token(type:NUMBER    -501) on line   86,  14 : 26
+ 397-th token(type:KEYWORD   -406) on line   86,  16 : ]
+ 398-th token(type:KEYWORD   -409) on line   86,  18 : :=
+ 399-th token(type:IDENTIFIER-500) on line   86,  21 : k
+ 400-th token(type:KEYWORD   -405) on line   86,  22 : [
+ 401-th token(type:NUMBER    -501) on line   86,  23 : 25
+ 402-th token(type:KEYWORD   -406) on line   86,  25 : ]
+ 403-th token(type:KEYWORD   -405) on line   86,  26 : [
+ 404-th token(type:NUMBER    -501) on line   86,  27 : 26
+ 405-th token(type:KEYWORD   -406) on line   86,  29 : ]
+ 406-th token(type:KEYWORD   -410) on line   86,  31 : +
+ 407-th token(type:NUMBER    -501) on line   86,  33 : 333
+ 408-th token(type:KEYWORD   -402) on line   86,  36 : ;
+[INFO ] line   86: 42 comment string // good
+
+[ERROR] line   87:  7 lexical analyzer error #
+ 409-th token(type:KEYWORD   -313) on line   87,   8 : else
+[ERROR] line   88:  7 lexical analyzer error #
+ 410-th token(type:IDENTIFIER-500) on line   88,   8 : include
+[ERROR] line   88: 16 lexical analyzer error ¡
+[ERROR] line   88: 17 lexical analyzer error ¨
+ 411-th token(type:IDENTIFIER-500) on line   88,  18 : Long40
+ 412-th token(type:KEYWORD   -407) on line   88,  24 : .
+ 413-th token(type:IDENTIFIER-500) on line   88,  25 : h
+[ERROR] line   88: 26 lexical analyzer error ¡
+[ERROR] line   88: 27 lexical analyzer error ¨
+ 414-th token(type:IDENTIFIER-500) on line   89,   8 : k
+ 415-th token(type:KEYWORD   -405) on line   89,   9 : [
+ 416-th token(type:NUMBER    -501) on line   89,  10 : 25
+ 417-th token(type:KEYWORD   -406) on line   89,  12 : ]
+ 418-th token(type:KEYWORD   -405) on line   89,  13 : [
+ 419-th token(type:NUMBER    -501) on line   89,  14 : 26
+ 420-th token(type:KEYWORD   -406) on line   89,  16 : ]
+ 421-th token(type:KEYWORD   -409) on line   89,  18 : :=
+ 422-th token(type:IDENTIFIER-500) on line   89,  21 : k
+ 423-th token(type:KEYWORD   -405) on line   89,  22 : [
+ 424-th token(type:NUMBER    -501) on line   89,  23 : 25
+ 425-th token(type:KEYWORD   -406) on line   89,  25 : ]
+ 426-th token(type:KEYWORD   -405) on line   89,  26 : [
+ 427-th token(type:NUMBER    -501) on line   89,  27 : 26
+ 428-th token(type:KEYWORD   -406) on line   89,  29 : ]
+ 429-th token(type:KEYWORD   -410) on line   89,  31 : +
+ 430-th token(type:NUMBER    -501) on line   89,  33 : 6666
+ 431-th token(type:KEYWORD   -402) on line   89,  37 : ;
+[INFO ] line   89: 43 comment string // good
+
+[ERROR] line   90:  7 lexical analyzer error #
+ 432-th token(type:IDENTIFIER-500) on line   90,   8 : include
+ 433-th token(type:KEYWORD   -412) on line   90,  16 : <
+ 434-th token(type:IDENTIFIER-500) on line   90,  17 : assert
+ 435-th token(type:KEYWORD   -407) on line   90,  23 : .
+ 436-th token(type:IDENTIFIER-500) on line   90,  24 : h
+ 437-th token(type:KEYWORD   -412) on line   90,  25 : >
+[ERROR] line   91:  7 lexical analyzer error #
+ 438-th token(type:IDENTIFIER-500) on line   91,   8 : endif
+[INFO ] line   96:  8 comment string // Warning 9: How do your compiler handle pragma?
+
+[ERROR] line   97:  8 lexical analyzer error #
+ 439-th token(type:IDENTIFIER-500) on line   97,   9 : pragma
+ 440-th token(type:IDENTIFIER-500) on line   97,  19 : __promise
+ 441-th token(type:KEYWORD   -400) on line   97,  28 : (
+ 442-th token(type:KEYWORD   -400) on line   97,  29 : (
+ 443-th token(type:IDENTIFIER-500) on line   97,  30 : k
+[ERROR] line   97: 32 lexical analyzer error %
+ 444-th token(type:NUMBER    -501) on line   97,  34 : 16
+ 445-th token(type:KEYWORD   -401) on line   97,  36 : )
+ 446-th token(type:KEYWORD   -412) on line   97,  38 : =
+ 447-th token(type:KEYWORD   -412) on line   97,  39 : =
+ 448-th token(type:NUMBER    -501) on line   97,  41 : 0
+ 449-th token(type:KEYWORD   -401) on line   97,  42 : )
+ 450-th token(type:KEYWORD   -402) on line   97,  43 : ;
+ 451-th token(type:IDENTIFIER-500) on line   98,   8 : b
+ 452-th token(type:KEYWORD   -409) on line   98,  10 : :=
+ 453-th token(type:NUMBER    -501) on line   98,  13 : 1
+ 454-th token(type:KEYWORD   -402) on line   98,  14 : ;
+ 455-th token(type:KEYWORD   -314) on line   99,   8 : while
+ 456-th token(type:IDENTIFIER-500) on line   99,  14 : b
+ 457-th token(type:KEYWORD   -412) on line   99,  16 : <=
+ 458-th token(type:IDENTIFIER-500) on line   99,  19 : k
+ 459-th token(type:KEYWORD   -315) on line   99,  21 : do
+ 460-th token(type:KEYWORD   -309) on line  100,   8 : begin
+ 461-th token(type:IDENTIFIER-500) on line  101,  10 : sum
+ 462-th token(type:KEYWORD   -409) on line  101,  14 : :=
+ 463-th token(type:IDENTIFIER-500) on line  101,  17 : sum
+ 464-th token(type:KEYWORD   -410) on line  101,  21 : +
+ 465-th token(type:IDENTIFIER-500) on line  101,  23 : a
+ 466-th token(type:KEYWORD   -405) on line  101,  24 : [
+ 467-th token(type:IDENTIFIER-500) on line  101,  25 : b
+ 468-th token(type:KEYWORD   -406) on line  101,  26 : ]
+ 469-th token(type:KEYWORD   -402) on line  101,  27 : ;
+ 470-th token(type:IDENTIFIER-500) on line  102,  10 : b
+ 471-th token(type:KEYWORD   -409) on line  102,  14 : :=
+ 472-th token(type:IDENTIFIER-500) on line  102,  17 : b
+ 473-th token(type:KEYWORD   -410) on line  102,  19 : +
+ 474-th token(type:NUMBER    -501) on line  102,  21 : 1
+ 475-th token(type:KEYWORD   -310) on line  103,   8 : end
+ 476-th token(type:KEYWORD   -402) on line  103,  11 : ;
+ 477-th token(type:KEYWORD   -310) on line  106,   4 : end
+ 478-th token(type:KEYWORD   -407) on line  106,   7 : .
+[INFO ] line  106: 11 comment string // this is the end of the program
+
