@@ -1,7 +1,7 @@
-   0-th token(type:IDENTIFIER) on line    1,   1 : ThisIsAVariable
-   1-th token(type:IDENTIFIER) on line    2,   1 : aa12345
-   2-th token(type:IDENTIFIER) on line    3,   1 : __Underscores_HEADING
-   3-th token(type:IDENTIFIER) on line    4,   1 : Complex_123ABC__AA_1_
-   4-th token(type:IDENTIFIER) on line    5,   1 : A_VERY_long_Identifier_1234567890987654321_CAN_YOU_IDENTIFIER_AND_TOKENIZE_IT_WITH_QUESTION_SIGN_IN_THE_LAST
-   5-th token(type:NUMBER    ) on line    6,   1 : 12345
-   6-th token(type:IDENTIFIER) on line    6,   6 : WRONG_Identifier
+token(type:IDENTIFIER) on line    1,   1 : ThisIsAVariable
+token(type:IDENTIFIER) on line    2,   1 : aa12345
+token(type:IDENTIFIER) on line    3,   1 : __Underscores_HEADING
+[ERROR] line    4:  1 bad IDENTIFIER Complex_123ABC__AA_1_
+token(type:IDENTIFIER) on line    5,   1 : A_VERY_long_Identifier_1234567890987654321_CAN_YOU_IDENTIFIER_AND_TOKENIZE_IT_WITH_QUESTION_SIGN_IN_THE_LAST
+token(type:NUMBER    ) on line    6,   1 : 12345
+token(type:IDENTIFIER) on line    6,   6 : WRONG_Identifier

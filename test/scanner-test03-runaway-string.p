@@ -7,7 +7,7 @@ PROGRAM mytest(input, output, error) ;
    //this is a very long comment and includes letter and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`1234567890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB
 
    begin
-      str := 'This is a srting!!';
+      str := "This is a srting!!";
       str2 := "  This is a srting,too!!  ";
       str3 := "";
       str4 := "adc""def";

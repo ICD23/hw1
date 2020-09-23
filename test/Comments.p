@@ -10,5 +10,5 @@
     123.456E+55
     "Hello World"
     // Nested C Style comments
-    /* Nested C++ Style Comments */
+    // Nested C Style Comments
 */

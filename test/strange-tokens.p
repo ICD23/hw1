@@ -35,7 +35,7 @@ strings:
 "abcde"
 "abcd""efg" double quote in a string
 "abc\ndef"  newline in a string.
-'''' single quote in a character
+"'" single quote in a string
 "'" single quote in a string
 
 

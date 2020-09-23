@@ -25,11 +25,11 @@ PROGRAM mytest(input, output, error) ;
       mm := 10.3E+2.34;
       pp := 10.3EBC;
       rr := 10.3E+5+123;
-      str := 'This is a srting!!';
+      str := "This is a srting!!";
       str2 := "  This is a srting,too!!  ";
       str3 := "";
       str4 := "adc""def";
       str4 := "cross 
          line string";
-      incorrect_symbols := ~!@#$%^&*()_+|`-=\,./;[]'{}<>?:
+      incorrect_symbols := ~!@#$%^&*()_+|`-=\,./;[]"{}<>?:
    end.   // this is the end of the program

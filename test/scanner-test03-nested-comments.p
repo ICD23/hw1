@@ -5,11 +5,11 @@ PROGRAM mytest(input, output, error) ;
    var gg, hh, mm, pp, pp@$5: real;
 
    /* this is a very long comment and includes letter 
-       /*  and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`12345  */
+       //  and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`12345
     67890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB  */
 
    begin
-      str := 'This is a srting!!';
+      str := "This is a srting!!";
       str2 := "  This is a srting,too!!  ";
       str3 := "";
       str4 := "adc""def";
