@@ -1,22 +1,3 @@
-token(type:STRING    ) on line    1,   1 : ""
-token(type:STRING    ) on line    2,   1 : "Single String"
-token(type:STRING    ) on line    3,   1 : "Double"
-token(type:STRING    ) on line    3,  10 : "Strings"
-token(type:STRING    ) on line    4,   1 : "double quote->"
-token(type:STRING    ) on line    4,  17 : "<-double quote"
-token(type:STRING    ) on line    5,   1 : "Your string should ignore these reserved words -> program var array not"
-token(type:STRING    ) on line    6,   1 : " Test whether you can ignore comments // This is a comment "
-token(type:STRING    ) on line    7,   1 : " Test whether you can ignore comments /* This is a comment */ "
-token(type:STRING    ) on line    8,   1 : " Test whether you can ignore comments // This is a comment /* This is a comment */ "
-token(type:STRING    ) on line    9,   1 : " Multi-Line
-  String Can you tokenize it"
-token(type:STRING    ) on line   11,   1 : " Multi-Line
-  With comment // This is a comment "
-token(type:STRING    ) on line   13,   1 : " Multi-Line
-  With comment 
-  /* 
-    This is a comment
-  */ "
 1: ""
 2: "Single String"
 3: "Double" "Strings"

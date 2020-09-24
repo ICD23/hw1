@@ -1,0 +1,12 @@
+token(type:NUMBER    ) on line    1,   1 : 5.36
+token(type:NUMBER    ) on line    2,   1 : 1768.0126976
+token(type:NUMBER    ) on line    3,   1 : 17.249E5
+token(type:NUMBER    ) on line    4,   1 : 16.33074E+2
+token(type:NUMBER    ) on line    5,   1 : 16.3374E-2
+token(type:NUMBER    ) on line    6,   1 : 1430E6
+token(type:NUMBER    ) on line    7,   1 : 16E+2
+token(type:NUMBER    ) on line    8,   1 : 7E-303
+token(type:NUMBER    ) on line    9,   1 : 142.53
+[ERROR] line    9:  7 lexical analyzer error E
+[ERROR] line    9:  8 lexical analyzer error A
+[ERROR] line    9:  9 lexical analyzer error A

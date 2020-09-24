@@ -1,0 +1,22 @@
+token(type:KEYWORD   ) on line    1,   1 : begin
+token(type:KEYWORD   ) on line    2,   1 : real
+token(type:IDENTIFIER) on line    2,   6 : a3aa
+token(type:KEYWORD   ) on line    2,  10 : ;
+token(type:KEYWORD   ) on line    3,   1 : integer
+token(type:IDENTIFIER) on line    3,   9 : bb9b
+token(type:KEYWORD   ) on line    3,  13 : ,
+token(type:IDENTIFIER) on line    3,  14 : ddd
+token(type:KEYWORD   ) on line    3,  17 : ;
+token(type:IDENTIFIER) on line    4,   1 : a3aa
+token(type:KEYWORD   ) on line    4,   5 : :=
+token(type:IDENTIFIER) on line    4,   8 : bb9b
+token(type:KEYWORD   ) on line    4,  13 : +
+token(type:IDENTIFIER) on line    4,  14 : c9d
+token(type:KEYWORD   ) on line    4,  18 : +
+token(type:NUMBER    ) on line    4,  20 : 123
+token(type:KEYWORD   ) on line    5,   1 : +
+token(type:NUMBER    ) on line    5,   3 : 543
+token(type:KEYWORD   ) on line    6,   1 : +
+token(type:IDENTIFIER) on line    6,   3 : ddd
+token(type:KEYWORD   ) on line    6,   7 : ;
+token(type:KEYWORD   ) on line    6,   9 : end

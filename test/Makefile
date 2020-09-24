@@ -5,7 +5,7 @@ OBJS    := $(patsubst %.p,output/%.out,$(SRCS))
 all: output $(OBJS)
 
 output/%.out: %.p
-	@-./$(EXE) $^ > $@ 2>&1
+	@-./$(EXE) $^ > $@ 2>$@.src
 
 test: all
 	@bash test.sh

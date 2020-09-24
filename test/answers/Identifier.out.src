@@ -1,0 +1,19 @@
+[ERROR] line    1:  1 lexical analyzer error T
+token(type:IDENTIFIER) on line    1,   2 : hisIsAVariable
+token(type:IDENTIFIER) on line    2,   1 : aa12345
+[ERROR] line    3:  1 lexical analyzer error _
+[ERROR] line    3:  2 lexical analyzer error _
+[ERROR] line    3:  3 lexical analyzer error U
+token(type:IDENTIFIER) on line    3,   4 : nderscores_HEADING
+token(type:IDENTIFIER) on line    4,   1 : complex_123ABC__AA_1
+[ERROR] line    4: 21 lexical analyzer error _
+token(type:IDENTIFIER) on line    5,   1 : a_VERY_long_Identifier_1234567890987654321_CAN_YOU_IDENTIFIER_AND_TOKENIZE_IT_WITH_QUESTION_SIGN_IN_THE_LAST
+token(type:NUMBER    ) on line    6,   1 : 12345
+[ERROR] line    6:  6 lexical analyzer error W
+[ERROR] line    6:  7 lexical analyzer error R
+[ERROR] line    6:  8 lexical analyzer error O
+[ERROR] line    6:  9 lexical analyzer error N
+[ERROR] line    6: 10 lexical analyzer error G
+[ERROR] line    6: 11 lexical analyzer error _
+[ERROR] line    6: 12 lexical analyzer error I
+token(type:IDENTIFIER) on line    6,  13 : dentifier

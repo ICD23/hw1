@@ -1,0 +1,5 @@
+token(type:NUMBER    ) on line    1,   1 : 0
+token(type:NUMBER    ) on line    2,   1 : 9
+token(type:NUMBER    ) on line    3,   1 : 13562
+token(type:NUMBER    ) on line    4,   1 : 138796542348956324597
+token(type:NUMBER    ) on line    5,   1 : 139783215468

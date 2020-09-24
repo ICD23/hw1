@@ -35,7 +35,8 @@ do
     ((pass=pass+1))
 
     # compare the file with answer in answers/
-    if cmp -s "${file}" "${ans}"
+    #if cmp -s "${file}" "${ans}"
+    if diff -s --strip-trailing-cr "${file}" "${ans}" > /dev/null
     then
         ((correct=correct+1))
         echo -e "${LGR}[O] ${file} pass the test${NC}"

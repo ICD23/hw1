@@ -1,0 +1,16 @@
+token(type:KEYWORD   ) on line    1,   1 : program
+token(type:KEYWORD   ) on line    2,   1 : var
+token(type:KEYWORD   ) on line    3,   1 : array
+token(type:KEYWORD   ) on line    4,   1 : not
+token(type:KEYWORD   ) on line    5,   1 : of
+token(type:KEYWORD   ) on line    6,   1 : integer
+token(type:KEYWORD   ) on line    7,   1 : real
+token(type:KEYWORD   ) on line    8,   1 : function
+token(type:KEYWORD   ) on line    9,   1 : procedure
+token(type:KEYWORD   ) on line   10,   1 : begin
+token(type:KEYWORD   ) on line   11,   1 : end
+token(type:KEYWORD   ) on line   12,   1 : if
+token(type:KEYWORD   ) on line   13,   1 : then
+token(type:KEYWORD   ) on line   14,   1 : else
+token(type:KEYWORD   ) on line   15,   1 : while
+token(type:KEYWORD   ) on line   16,   1 : do

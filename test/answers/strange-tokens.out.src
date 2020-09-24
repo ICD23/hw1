@@ -1,0 +1,112 @@
+token(type:IDENTIFIER) on line    1,   1 : integers
+token(type:KEYWORD   ) on line    1,   9 : :
+token(type:NUMBER    ) on line    3,   1 : 0
+token(type:NUMBER    ) on line    4,   1 : 123
+token(type:NUMBER    ) on line    5,   1 : 00
+token(type:NUMBER    ) on line    6,   1 : 00123
+token(type:NUMBER    ) on line    7,   1 : 0123
+token(type:NUMBER    ) on line    8,   1 : 123456789012345678901234567890
+token(type:IDENTIFIER) on line    8,  33 : too
+token(type:IDENTIFIER) on line    8,  37 : big
+token(type:IDENTIFIER) on line    8,  41 : for
+token(type:IDENTIFIER) on line    8,  45 : the
+token(type:IDENTIFIER) on line    8,  49 : compiler
+token(type:KEYWORD   ) on line    8,  57 : ,
+token(type:IDENTIFIER) on line    8,  59 : but
+token(type:IDENTIFIER) on line    8,  63 : this
+token(type:IDENTIFIER) on line    8,  68 : is
+token(type:IDENTIFIER) on line    8,  71 : ok
+token(type:IDENTIFIER) on line    8,  74 : for
+token(type:IDENTIFIER) on line    8,  78 : the
+token(type:IDENTIFIER) on line    8,  82 : scanner
+token(type:KEYWORD   ) on line    8,  89 : .
+token(type:IDENTIFIER) on line   10,   1 : floating
+token(type:IDENTIFIER) on line   10,  10 : point
+token(type:IDENTIFIER) on line   10,  16 : numbers
+token(type:KEYWORD   ) on line   10,  23 : :
+token(type:NUMBER    ) on line   11,   1 : 0
+token(type:KEYWORD   ) on line   11,   2 : .
+token(type:NUMBER    ) on line   12,   1 : 0.0
+[ERROR] line   12:  6 lexical analyzer error O
+[ERROR] line   12:  7 lexical analyzer error K
+token(type:NUMBER    ) on line   13,   1 : 000
+token(type:KEYWORD   ) on line   13,   4 : .
+token(type:KEYWORD   ) on line   14,   1 : .
+token(type:NUMBER    ) on line   14,   2 : 000
+token(type:NUMBER    ) on line   15,   1 : 0.000
+[ERROR] line   15:  7 lexical analyzer error O
+[ERROR] line   15:  8 lexical analyzer error K
+token(type:NUMBER    ) on line   16,   1 : 000.00
+token(type:KEYWORD   ) on line   17,   1 : .
+token(type:NUMBER    ) on line   17,   2 : 123
+token(type:IDENTIFIER) on line   19,   1 : scientific
+token(type:IDENTIFIER) on line   19,  12 : notations
+token(type:KEYWORD   ) on line   19,  21 : :
+token(type:NUMBER    ) on line   20,   1 : 3.45E4
+token(type:NUMBER    ) on line   21,   1 : 3.45E+4
+token(type:NUMBER    ) on line   22,   1 : 3.45E-4
+token(type:NUMBER    ) on line   23,   1 : 3.45E04
+token(type:NUMBER    ) on line   24,   1 : 3.45E+04
+token(type:NUMBER    ) on line   25,   1 : 3.45E-04
+token(type:NUMBER    ) on line   27,   1 : 1.23e4
+token(type:NUMBER    ) on line   28,   1 : 3.45e+4
+token(type:NUMBER    ) on line   29,   1 : 3.45e-4
+token(type:NUMBER    ) on line   30,   1 : 3.45e04
+token(type:NUMBER    ) on line   31,   1 : 3.45e+04
+token(type:NUMBER    ) on line   32,   1 : 3.45e-04
+token(type:IDENTIFIER) on line   34,   1 : strings
+token(type:KEYWORD   ) on line   34,   8 : :
+token(type:STRING    ) on line   35,   1 : "abcde"
+token(type:STRING    ) on line   36,   1 : "abcd"
+token(type:STRING    ) on line   36,   7 : "efg"
+token(type:IDENTIFIER) on line   36,  13 : double
+token(type:IDENTIFIER) on line   36,  20 : quote
+token(type:IDENTIFIER) on line   36,  26 : in
+token(type:IDENTIFIER) on line   36,  29 : a
+token(type:KEYWORD   ) on line   36,  31 : string
+token(type:STRING    ) on line   37,   1 : "abc\ndef"
+token(type:IDENTIFIER) on line   37,  13 : newline
+token(type:IDENTIFIER) on line   37,  21 : in
+token(type:IDENTIFIER) on line   37,  24 : a
+token(type:KEYWORD   ) on line   37,  26 : string
+token(type:KEYWORD   ) on line   37,  32 : .
+token(type:STRING    ) on line   38,   1 : "'"
+token(type:IDENTIFIER) on line   38,   5 : single
+token(type:IDENTIFIER) on line   38,  12 : quote
+token(type:IDENTIFIER) on line   38,  18 : in
+token(type:IDENTIFIER) on line   38,  21 : a
+token(type:KEYWORD   ) on line   38,  23 : string
+token(type:STRING    ) on line   39,   1 : "'"
+token(type:IDENTIFIER) on line   39,   5 : single
+token(type:IDENTIFIER) on line   39,  12 : quote
+token(type:IDENTIFIER) on line   39,  18 : in
+token(type:IDENTIFIER) on line   39,  21 : a
+token(type:KEYWORD   ) on line   39,  23 : string
+token(type:IDENTIFIER) on line   42,   1 : comments
+token(type:KEYWORD   ) on line   42,   9 : :
+[INFO ] line   44:  1 comment string
+[INFO ] line   45:  1 comment string start
+[INFO ] line   45: 22 comment string end
+[INFO ] line   46:  1 comment string start
+[INFO ] line   46: 66 comment string end
+[INFO ] line   47:  1 comment string
+token(type:IDENTIFIER) on line   49,   1 : pragmas
+token(type:KEYWORD   ) on line   49,   8 : :
+token(type:IDENTIFIER) on line   49,  11 : a
+token(type:IDENTIFIER) on line   49,  13 : pragma
+token(type:IDENTIFIER) on line   49,  20 : occupies
+token(type:IDENTIFIER) on line   49,  29 : a
+token(type:IDENTIFIER) on line   49,  31 : single
+token(type:IDENTIFIER) on line   49,  38 : line
+token(type:IDENTIFIER) on line   49,  43 : by
+token(type:IDENTIFIER) on line   49,  46 : itself
+token(type:KEYWORD   ) on line   49,  52 : ,
+token(type:IDENTIFIER) on line   49,  54 : starting
+token(type:IDENTIFIER) on line   49,  63 : with
+token(type:STRING    ) on line   49,  68 : "#pragma"
+token(type:KEYWORD   ) on line   49,  77 : .
+[ERROR] line   51:  1 lexical analyzer error #
+token(type:IDENTIFIER) on line   51,   2 : pragmas
+token(type:IDENTIFIER) on line   51,  10 : profiling
+token(type:NUMBER    ) on line   51,  20 : 27
+token(type:NUMBER    ) on line   51,  23 : 59

@@ -1,0 +1,547 @@
+[INFO ] line    1:  1 comment string
+[INFO ] line    2:  1 comment string
+[INFO ] line    3:  1 comment string
+token(type:KEYWORD   ) on line    5,   1 : PROGRAM
+token(type:IDENTIFIER) on line    5,   9 : foo
+token(type:KEYWORD   ) on line    5,  12 : (
+token(type:IDENTIFIER) on line    5,  13 : input
+token(type:KEYWORD   ) on line    5,  18 : ,
+token(type:IDENTIFIER) on line    5,  20 : output
+token(type:KEYWORD   ) on line    5,  26 : ,
+token(type:IDENTIFIER) on line    5,  28 : error
+token(type:KEYWORD   ) on line    5,  33 : )
+token(type:KEYWORD   ) on line    5,  35 : ;
+[INFO ] line    6:  4 comment string
+token(type:KEYWORD   ) on line    7,   4 : var
+token(type:IDENTIFIER) on line    7,   8 : a
+token(type:KEYWORD   ) on line    7,   9 : ,
+token(type:IDENTIFIER) on line    7,  11 : b
+token(type:KEYWORD   ) on line    7,  12 : ,
+token(type:IDENTIFIER) on line    7,  14 : c
+token(type:KEYWORD   ) on line    7,  15 : :
+token(type:KEYWORD   ) on line    7,  17 : integer
+token(type:KEYWORD   ) on line    7,  24 : ;
+token(type:KEYWORD   ) on line    8,   4 : var
+token(type:IDENTIFIER) on line    8,   8 : d
+token(type:KEYWORD   ) on line    8,   9 : ,
+token(type:IDENTIFIER) on line    8,  11 : e
+token(type:KEYWORD   ) on line    8,  12 : :
+token(type:KEYWORD   ) on line    8,  14 : array
+token(type:KEYWORD   ) on line    8,  20 : [
+token(type:NUMBER    ) on line    8,  22 : 1
+token(type:KEYWORD   ) on line    8,  24 : ..
+token(type:NUMBER    ) on line    8,  27 : 10
+token(type:KEYWORD   ) on line    8,  30 : ]
+token(type:KEYWORD   ) on line    8,  32 : of
+token(type:KEYWORD   ) on line    8,  35 : integer
+token(type:KEYWORD   ) on line    8,  42 : ;
+token(type:KEYWORD   ) on line    9,   4 : var
+token(type:IDENTIFIER) on line    9,   8 : g
+token(type:KEYWORD   ) on line    9,   9 : ,
+token(type:IDENTIFIER) on line    9,  11 : h
+token(type:KEYWORD   ) on line    9,  12 : :
+token(type:KEYWORD   ) on line    9,  14 : real
+token(type:KEYWORD   ) on line    9,  18 : ;
+token(type:KEYWORD   ) on line   10,   4 : var
+token(type:IDENTIFIER) on line   10,   8 : k
+token(type:KEYWORD   ) on line   10,   9 : :
+token(type:KEYWORD   ) on line   10,  11 : array
+token(type:KEYWORD   ) on line   10,  17 : [
+token(type:NUMBER    ) on line   10,  19 : 23
+token(type:KEYWORD   ) on line   10,  22 : ..
+token(type:NUMBER    ) on line   10,  25 : 57
+token(type:KEYWORD   ) on line   10,  28 : ]
+token(type:KEYWORD   ) on line   10,  30 : of
+token(type:KEYWORD   ) on line   10,  33 : array
+token(type:KEYWORD   ) on line   10,  39 : [
+token(type:NUMBER    ) on line   10,  41 : 23
+token(type:KEYWORD   ) on line   10,  44 : ..
+token(type:NUMBER    ) on line   10,  47 : 57
+token(type:KEYWORD   ) on line   10,  50 : ]
+token(type:KEYWORD   ) on line   10,  52 : of
+token(type:KEYWORD   ) on line   10,  55 : real
+token(type:KEYWORD   ) on line   10,  59 : ;
+token(type:KEYWORD   ) on line   11,   4 : var
+token(type:IDENTIFIER) on line   11,   8 : a
+token(type:KEYWORD   ) on line   11,   9 : :
+token(type:KEYWORD   ) on line   11,  11 : array
+token(type:KEYWORD   ) on line   11,  17 : [
+token(type:NUMBER    ) on line   11,  19 : 23
+token(type:KEYWORD   ) on line   11,  22 : ..
+token(type:NUMBER    ) on line   11,  25 : 57
+token(type:KEYWORD   ) on line   11,  28 : ]
+token(type:KEYWORD   ) on line   11,  30 : of
+token(type:KEYWORD   ) on line   11,  33 : array
+token(type:KEYWORD   ) on line   11,  39 : [
+token(type:NUMBER    ) on line   11,  41 : 23
+token(type:KEYWORD   ) on line   11,  44 : ..
+token(type:NUMBER    ) on line   11,  47 : 57
+token(type:KEYWORD   ) on line   11,  50 : ]
+token(type:KEYWORD   ) on line   11,  52 : of
+token(type:KEYWORD   ) on line   11,  55 : real
+token(type:KEYWORD   ) on line   11,  59 : ;
+[INFO ] line   11: 62 comment string
+[INFO ] line   14:  4 comment string
+token(type:KEYWORD   ) on line   15,   4 : procedure
+token(type:IDENTIFIER) on line   15,  14 : sort
+token(type:KEYWORD   ) on line   15,  18 : (
+token(type:IDENTIFIER) on line   15,  19 : a
+token(type:KEYWORD   ) on line   15,  20 : :
+token(type:KEYWORD   ) on line   15,  22 : array
+token(type:KEYWORD   ) on line   15,  28 : [
+token(type:NUMBER    ) on line   15,  30 : 1
+token(type:KEYWORD   ) on line   15,  32 : ..
+token(type:NUMBER    ) on line   15,  35 : 10
+token(type:KEYWORD   ) on line   15,  38 : ]
+token(type:KEYWORD   ) on line   15,  40 : of
+token(type:KEYWORD   ) on line   15,  43 : integer
+token(type:KEYWORD   ) on line   15,  50 : )
+token(type:KEYWORD   ) on line   15,  51 : ;
+token(type:KEYWORD   ) on line   16,   7 : var
+token(type:IDENTIFIER) on line   16,  11 : a
+token(type:KEYWORD   ) on line   16,  12 : ,
+token(type:IDENTIFIER) on line   16,  14 : b
+token(type:KEYWORD   ) on line   16,  15 : ,
+token(type:IDENTIFIER) on line   16,  17 : c
+token(type:KEYWORD   ) on line   16,  18 : :
+token(type:KEYWORD   ) on line   16,  20 : integer
+token(type:KEYWORD   ) on line   16,  27 : ;
+[INFO ] line   16: 29 comment string
+token(type:KEYWORD   ) on line   17,   7 : begin
+token(type:IDENTIFIER) on line   18,   9 : e
+token(type:KEYWORD   ) on line   18,  11 : :=
+token(type:IDENTIFIER) on line   18,  14 : a
+token(type:KEYWORD   ) on line   18,  16 : +
+token(type:IDENTIFIER) on line   18,  18 : d
+[INFO ] line   18: 27 comment string
+token(type:IDENTIFIER) on line   19,   2 : a
+token(type:KEYWORD   ) on line   19,   4 : :=
+token(type:IDENTIFIER) on line   19,   7 : qqq
+token(type:KEYWORD   ) on line   19,  11 : -
+token(type:IDENTIFIER) on line   19,  13 : rrr
+token(type:KEYWORD   ) on line   19,  16 : ;
+[INFO ] line   19: 20 comment string
+token(type:IDENTIFIER) on line   20,   9 : d
+token(type:KEYWORD   ) on line   20,  11 : :=
+token(type:IDENTIFIER) on line   20,  14 : f
+token(type:KEYWORD   ) on line   20,  15 : (
+token(type:IDENTIFIER) on line   20,  16 : k
+token(type:KEYWORD   ) on line   20,  17 : ,
+token(type:IDENTIFIER) on line   20,  19 : e
+token(type:KEYWORD   ) on line   20,  20 : )
+token(type:KEYWORD   ) on line   20,  21 : ;
+[INFO ] line   20: 27 comment string
+token(type:KEYWORD   ) on line   21,   7 : end
+token(type:KEYWORD   ) on line   21,  10 : ;
+token(type:KEYWORD   ) on line   24,   4 : function
+token(type:IDENTIFIER) on line   24,  14 : addition
+token(type:KEYWORD   ) on line   24,  22 : (
+token(type:IDENTIFIER) on line   24,  23 : a
+token(type:KEYWORD   ) on line   24,  24 : ,
+token(type:IDENTIFIER) on line   24,  26 : b
+token(type:KEYWORD   ) on line   24,  27 : :
+token(type:KEYWORD   ) on line   24,  29 : integer
+token(type:KEYWORD   ) on line   24,  36 : )
+token(type:KEYWORD   ) on line   24,  38 : :
+token(type:KEYWORD   ) on line   24,  40 : integer
+token(type:KEYWORD   ) on line   24,  47 : ;
+token(type:KEYWORD   ) on line   25,   7 : var
+token(type:IDENTIFIER) on line   25,  11 : c
+token(type:KEYWORD   ) on line   25,  12 : :
+token(type:KEYWORD   ) on line   25,  14 : integer
+token(type:KEYWORD   ) on line   25,  21 : ;
+[INFO ] line   25: 24 comment string
+token(type:KEYWORD   ) on line   26,   7 : begin
+token(type:IDENTIFIER) on line   27,  10 : addition
+token(type:KEYWORD   ) on line   27,  19 : :=
+token(type:IDENTIFIER) on line   27,  22 : a
+token(type:KEYWORD   ) on line   27,  24 : +
+token(type:IDENTIFIER) on line   27,  26 : b
+[INFO ] line   27: 30 comment string
+token(type:KEYWORD   ) on line   28,   7 : end
+token(type:KEYWORD   ) on line   28,  10 : ;
+token(type:KEYWORD   ) on line   31,   4 : function
+token(type:IDENTIFIER) on line   31,  14 : addition
+token(type:KEYWORD   ) on line   31,  22 : (
+token(type:IDENTIFIER) on line   31,  23 : c
+token(type:KEYWORD   ) on line   31,  24 : ,
+token(type:IDENTIFIER) on line   31,  26 : d
+token(type:KEYWORD   ) on line   31,  27 : :
+token(type:KEYWORD   ) on line   31,  29 : integer
+token(type:KEYWORD   ) on line   31,  36 : )
+token(type:KEYWORD   ) on line   31,  38 : :
+token(type:KEYWORD   ) on line   31,  40 : integer
+token(type:KEYWORD   ) on line   31,  47 : ;
+[INFO ] line   32:  4 comment string
+token(type:KEYWORD   ) on line   33,   7 : var
+token(type:IDENTIFIER) on line   33,  11 : e
+token(type:KEYWORD   ) on line   33,  12 : :
+token(type:KEYWORD   ) on line   33,  14 : integer
+token(type:KEYWORD   ) on line   33,  21 : ;
+[INFO ] line   33: 24 comment string
+token(type:KEYWORD   ) on line   34,   7 : begin
+token(type:IDENTIFIER) on line   35,  10 : addition
+token(type:KEYWORD   ) on line   35,  19 : :=
+token(type:IDENTIFIER) on line   35,  22 : c
+token(type:KEYWORD   ) on line   35,  24 : +
+token(type:IDENTIFIER) on line   35,  26 : d
+[INFO ] line   35: 30 comment string
+token(type:KEYWORD   ) on line   36,   7 : end
+token(type:KEYWORD   ) on line   36,  10 : ;
+token(type:KEYWORD   ) on line   39,   4 : function
+token(type:IDENTIFIER) on line   39,  14 : addition
+token(type:KEYWORD   ) on line   39,  22 : (
+token(type:IDENTIFIER) on line   39,  23 : a
+token(type:KEYWORD   ) on line   39,  24 : ,
+token(type:IDENTIFIER) on line   39,  26 : b
+token(type:KEYWORD   ) on line   39,  27 : :
+token(type:KEYWORD   ) on line   39,  29 : real
+token(type:KEYWORD   ) on line   39,  33 : )
+token(type:KEYWORD   ) on line   39,  35 : :
+token(type:KEYWORD   ) on line   39,  37 : real
+token(type:KEYWORD   ) on line   39,  41 : ;
+[INFO ] line   40:  4 comment string
+token(type:KEYWORD   ) on line   41,   7 : var
+token(type:IDENTIFIER) on line   41,  11 : c
+token(type:KEYWORD   ) on line   41,  12 : :
+token(type:KEYWORD   ) on line   41,  14 : integer
+token(type:KEYWORD   ) on line   41,  21 : ;
+[INFO ] line   41: 24 comment string
+token(type:KEYWORD   ) on line   42,   7 : begin
+token(type:IDENTIFIER) on line   43,  10 : addition
+token(type:KEYWORD   ) on line   43,  19 : :=
+token(type:IDENTIFIER) on line   43,  22 : a
+token(type:KEYWORD   ) on line   43,  24 : +
+token(type:IDENTIFIER) on line   43,  26 : b
+[INFO ] line   43: 30 comment string
+token(type:KEYWORD   ) on line   44,   7 : end
+token(type:KEYWORD   ) on line   44,  10 : ;
+token(type:KEYWORD   ) on line   47,   4 : begin
+token(type:IDENTIFIER) on line   48,   7 : a
+token(type:KEYWORD   ) on line   48,   9 : :=
+token(type:NUMBER    ) on line   48,  12 : 1
+token(type:KEYWORD   ) on line   48,  13 : ;
+token(type:KEYWORD   ) on line   49,   7 : while
+token(type:IDENTIFIER) on line   49,  13 : a
+token(type:KEYWORD   ) on line   49,  15 : <
+token(type:NUMBER    ) on line   49,  17 : 10
+token(type:KEYWORD   ) on line   49,  20 : do
+token(type:KEYWORD   ) on line   50,   7 : begin
+token(type:IDENTIFIER) on line   51,  10 : sum
+token(type:KEYWORD   ) on line   51,  14 : :=
+token(type:IDENTIFIER) on line   51,  17 : sum
+token(type:KEYWORD   ) on line   51,  21 : +
+token(type:IDENTIFIER) on line   51,  23 : a
+token(type:KEYWORD   ) on line   51,  24 : ;
+token(type:IDENTIFIER) on line   52,  10 : a
+token(type:KEYWORD   ) on line   52,  14 : :=
+token(type:IDENTIFIER) on line   52,  17 : a
+token(type:KEYWORD   ) on line   52,  19 : +
+token(type:NUMBER    ) on line   52,  21 : 1
+token(type:KEYWORD   ) on line   53,   7 : end
+token(type:KEYWORD   ) on line   53,  10 : ;
+token(type:KEYWORD   ) on line   54,   7 : begin
+[INFO ] line   54: 14 comment string
+token(type:IDENTIFIER) on line   55,  10 : b
+token(type:KEYWORD   ) on line   55,  12 : :=
+token(type:NUMBER    ) on line   55,  15 : 1
+token(type:KEYWORD   ) on line   55,  16 : ;
+token(type:KEYWORD   ) on line   56,  10 : while
+token(type:IDENTIFIER) on line   56,  16 : b
+token(type:KEYWORD   ) on line   56,  18 : <
+token(type:NUMBER    ) on line   56,  20 : 11
+token(type:KEYWORD   ) on line   56,  23 : do
+token(type:KEYWORD   ) on line   57,  10 : begin
+[INFO ] line   57: 17 comment string
+token(type:IDENTIFIER) on line   58,  13 : d
+token(type:KEYWORD   ) on line   58,  14 : [
+token(type:IDENTIFIER) on line   58,  15 : b
+token(type:KEYWORD   ) on line   58,  16 : ]
+token(type:KEYWORD   ) on line   58,  18 : :=
+token(type:IDENTIFIER) on line   58,  21 : b
+token(type:KEYWORD   ) on line   58,  23 : +
+token(type:IDENTIFIER) on line   58,  25 : b
+token(type:KEYWORD   ) on line   58,  27 : *
+token(type:KEYWORD   ) on line   58,  29 : (
+token(type:IDENTIFIER) on line   58,  30 : b
+token(type:KEYWORD   ) on line   58,  32 : -
+token(type:NUMBER    ) on line   58,  34 : 1
+token(type:KEYWORD   ) on line   58,  35 : )
+token(type:KEYWORD   ) on line   58,  36 : ;
+token(type:IDENTIFIER) on line   59,  13 : b
+token(type:KEYWORD   ) on line   59,  15 : :=
+token(type:IDENTIFIER) on line   59,  18 : b
+token(type:KEYWORD   ) on line   59,  20 : +
+token(type:NUMBER    ) on line   59,  21 : 1
+token(type:KEYWORD   ) on line   60,  10 : end
+token(type:KEYWORD   ) on line   60,  13 : ;
+token(type:IDENTIFIER) on line   61,  10 : sort
+token(type:KEYWORD   ) on line   61,  14 : (
+token(type:IDENTIFIER) on line   61,  15 : d
+token(type:KEYWORD   ) on line   61,  16 : )
+[INFO ] line   61: 20 comment string
+token(type:KEYWORD   ) on line   62,   7 : end
+token(type:KEYWORD   ) on line   62,  10 : ;
+token(type:IDENTIFIER) on line   63,   7 : k
+token(type:KEYWORD   ) on line   63,   8 : [
+token(type:NUMBER    ) on line   63,   9 : 25
+token(type:KEYWORD   ) on line   63,  11 : ]
+token(type:KEYWORD   ) on line   63,  12 : [
+token(type:NUMBER    ) on line   63,  13 : 26
+token(type:KEYWORD   ) on line   63,  15 : ]
+token(type:KEYWORD   ) on line   63,  17 : :=
+token(type:NUMBER    ) on line   63,  20 : 3
+token(type:KEYWORD   ) on line   63,  21 : ;
+[INFO ] line   63: 30 comment string
+token(type:IDENTIFIER) on line   64,   7 : k
+token(type:KEYWORD   ) on line   64,   8 : [
+token(type:NUMBER    ) on line   64,   9 : 25
+token(type:KEYWORD   ) on line   64,  11 : ]
+token(type:KEYWORD   ) on line   64,  12 : [
+token(type:NUMBER    ) on line   64,  13 : 26
+token(type:KEYWORD   ) on line   64,  15 : ]
+token(type:KEYWORD   ) on line   64,  17 : :=
+token(type:NUMBER    ) on line   64,  20 : 3.14
+token(type:KEYWORD   ) on line   64,  24 : ;
+[INFO ] line   64: 30 comment string
+token(type:IDENTIFIER) on line   65,   7 : k
+token(type:KEYWORD   ) on line   65,   8 : [
+token(type:NUMBER    ) on line   65,   9 : 25
+token(type:KEYWORD   ) on line   65,  11 : ]
+token(type:KEYWORD   ) on line   65,  12 : [
+token(type:NUMBER    ) on line   65,  13 : 26
+token(type:KEYWORD   ) on line   65,  15 : ]
+token(type:KEYWORD   ) on line   65,  17 : :=
+token(type:IDENTIFIER) on line   65,  20 : k
+token(type:KEYWORD   ) on line   65,  21 : [
+token(type:NUMBER    ) on line   65,  22 : 25
+token(type:KEYWORD   ) on line   65,  24 : ]
+token(type:KEYWORD   ) on line   65,  25 : [
+token(type:NUMBER    ) on line   65,  26 : 26
+token(type:KEYWORD   ) on line   65,  28 : ]
+token(type:KEYWORD   ) on line   65,  30 : +
+token(type:NUMBER    ) on line   65,  32 : 3
+token(type:KEYWORD   ) on line   65,  33 : ;
+[INFO ] line   65: 39 comment string
+token(type:IDENTIFIER) on line   66,   7 : k
+token(type:KEYWORD   ) on line   66,   8 : [
+token(type:NUMBER    ) on line   66,   9 : 25
+token(type:KEYWORD   ) on line   66,  11 : ]
+token(type:KEYWORD   ) on line   66,  12 : [
+token(type:NUMBER    ) on line   66,  13 : 126
+token(type:KEYWORD   ) on line   66,  16 : ]
+token(type:KEYWORD   ) on line   66,  19 : :=
+token(type:NUMBER    ) on line   66,  22 : 3.14
+token(type:KEYWORD   ) on line   66,  26 : ;
+[INFO ] line   66: 30 comment string
+token(type:IDENTIFIER) on line   67,   7 : k
+token(type:KEYWORD   ) on line   67,   8 : [
+token(type:NUMBER    ) on line   67,   9 : 125
+token(type:KEYWORD   ) on line   67,  12 : ]
+token(type:KEYWORD   ) on line   67,  13 : [
+token(type:NUMBER    ) on line   67,  14 : 26
+token(type:KEYWORD   ) on line   67,  16 : ]
+token(type:KEYWORD   ) on line   67,  19 : :=
+token(type:NUMBER    ) on line   67,  22 : 3.14
+token(type:KEYWORD   ) on line   67,  26 : ;
+[INFO ] line   67: 30 comment string
+token(type:IDENTIFIER) on line   68,   7 : k
+token(type:KEYWORD   ) on line   68,   8 : [
+token(type:NUMBER    ) on line   68,   9 : 125
+token(type:KEYWORD   ) on line   68,  12 : ]
+token(type:KEYWORD   ) on line   68,  13 : [
+token(type:NUMBER    ) on line   68,  14 : 126
+token(type:KEYWORD   ) on line   68,  17 : ]
+token(type:KEYWORD   ) on line   68,  19 : :=
+token(type:NUMBER    ) on line   68,  22 : 3.14
+[INFO ] line   68: 30 comment string
+token(type:IDENTIFIER) on line   69,   7 : a
+token(type:KEYWORD   ) on line   69,   9 : :=
+token(type:IDENTIFIER) on line   69,  12 : extf
+token(type:KEYWORD   ) on line   69,  16 : (
+token(type:NUMBER    ) on line   69,  17 : 20
+token(type:KEYWORD   ) on line   69,  19 : ,
+token(type:IDENTIFIER) on line   69,  21 : sum
+token(type:KEYWORD   ) on line   69,  24 : )
+token(type:KEYWORD   ) on line   69,  25 : ;
+[INFO ] line   69: 30 comment string
+[INFO ] line   73:  7 comment string
+[ERROR] line   74:  4 lexical analyzer error #
+token(type:IDENTIFIER) on line   74,   5 : include
+token(type:KEYWORD   ) on line   74,  13 : <
+token(type:IDENTIFIER) on line   74,  14 : abc
+token(type:KEYWORD   ) on line   74,  17 : .
+token(type:IDENTIFIER) on line   74,  18 : h
+token(type:KEYWORD   ) on line   74,  19 : >
+[INFO ] line   74: 25 comment string
+token(type:IDENTIFIER) on line   75,   7 : a
+token(type:KEYWORD   ) on line   75,   9 : =
+token(type:IDENTIFIER) on line   75,  11 : bbb
+token(type:KEYWORD   ) on line   75,  14 : (
+token(type:NUMBER    ) on line   75,  15 : 20
+token(type:KEYWORD   ) on line   75,  17 : ,
+token(type:IDENTIFIER) on line   75,  19 : sum
+token(type:KEYWORD   ) on line   75,  22 : )
+token(type:KEYWORD   ) on line   75,  23 : ;
+[INFO ] line   79:  8 comment string
+[ERROR] line   81:  7 lexical analyzer error #
+token(type:KEYWORD   ) on line   81,   8 : if
+[ERROR] line   81: 11 lexical analyzer error !
+token(type:IDENTIFIER) on line   81,  12 : defined
+token(type:KEYWORD   ) on line   81,  19 : (
+[ERROR] line   81: 20 lexical analyzer error _
+[ERROR] line   81: 21 lexical analyzer error _
+token(type:IDENTIFIER) on line   81,  22 : unix
+[ERROR] line   81: 26 lexical analyzer error _
+[ERROR] line   81: 27 lexical analyzer error _
+token(type:KEYWORD   ) on line   81,  28 : )
+[ERROR] line   82:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   82,   8 : include
+[ERROR] line   82: 16 lexical analyzer error L
+token(type:IDENTIFIER) on line   82,  17 : ong40
+token(type:KEYWORD   ) on line   82,  22 : .
+token(type:IDENTIFIER) on line   82,  23 : h
+[ERROR] line   82: 24 lexical analyzer error ¡
+[ERROR] line   82: 25 lexical analyzer error ¨
+token(type:IDENTIFIER) on line   83,   8 : k
+token(type:KEYWORD   ) on line   83,   9 : [
+token(type:NUMBER    ) on line   83,  10 : 25
+token(type:KEYWORD   ) on line   83,  12 : ]
+token(type:KEYWORD   ) on line   83,  13 : [
+token(type:NUMBER    ) on line   83,  14 : 26
+token(type:KEYWORD   ) on line   83,  16 : ]
+token(type:KEYWORD   ) on line   83,  18 : :=
+token(type:IDENTIFIER) on line   83,  21 : k
+token(type:KEYWORD   ) on line   83,  22 : [
+token(type:NUMBER    ) on line   83,  23 : 25
+token(type:KEYWORD   ) on line   83,  25 : ]
+token(type:KEYWORD   ) on line   83,  26 : [
+token(type:NUMBER    ) on line   83,  27 : 26
+token(type:KEYWORD   ) on line   83,  29 : ]
+token(type:KEYWORD   ) on line   83,  31 : +
+token(type:NUMBER    ) on line   83,  33 : 5
+token(type:KEYWORD   ) on line   83,  34 : ;
+[INFO ] line   83: 40 comment string
+[ERROR] line   84:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   84,   8 : elif
+token(type:IDENTIFIER) on line   84,  13 : defined
+token(type:KEYWORD   ) on line   84,  20 : (
+[ERROR] line   84: 21 lexical analyzer error _
+[ERROR] line   84: 22 lexical analyzer error T
+[ERROR] line   84: 23 lexical analyzer error M
+[ERROR] line   84: 24 lexical analyzer error S
+token(type:NUMBER    ) on line   84,  25 : 320
+[ERROR] line   84: 28 lexical analyzer error C
+token(type:NUMBER    ) on line   84,  29 : 6200
+token(type:KEYWORD   ) on line   84,  33 : )
+[ERROR] line   85:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   85,   8 : define
+token(type:IDENTIFIER) on line   85,  15 : assert
+token(type:KEYWORD   ) on line   85,  21 : (
+token(type:IDENTIFIER) on line   85,  22 : a
+token(type:KEYWORD   ) on line   85,  23 : )
+token(type:IDENTIFIER) on line   86,   8 : k
+token(type:KEYWORD   ) on line   86,   9 : [
+token(type:NUMBER    ) on line   86,  10 : 25
+token(type:KEYWORD   ) on line   86,  12 : ]
+token(type:KEYWORD   ) on line   86,  13 : [
+token(type:NUMBER    ) on line   86,  14 : 26
+token(type:KEYWORD   ) on line   86,  16 : ]
+token(type:KEYWORD   ) on line   86,  18 : :=
+token(type:IDENTIFIER) on line   86,  21 : k
+token(type:KEYWORD   ) on line   86,  22 : [
+token(type:NUMBER    ) on line   86,  23 : 25
+token(type:KEYWORD   ) on line   86,  25 : ]
+token(type:KEYWORD   ) on line   86,  26 : [
+token(type:NUMBER    ) on line   86,  27 : 26
+token(type:KEYWORD   ) on line   86,  29 : ]
+token(type:KEYWORD   ) on line   86,  31 : +
+token(type:NUMBER    ) on line   86,  33 : 333
+token(type:KEYWORD   ) on line   86,  36 : ;
+[INFO ] line   86: 42 comment string
+[ERROR] line   87:  7 lexical analyzer error #
+token(type:KEYWORD   ) on line   87,   8 : else
+[ERROR] line   88:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   88,   8 : include
+[ERROR] line   88: 16 lexical analyzer error ¡
+[ERROR] line   88: 17 lexical analyzer error ¨
+[ERROR] line   88: 18 lexical analyzer error L
+token(type:IDENTIFIER) on line   88,  19 : ong40
+token(type:KEYWORD   ) on line   88,  24 : .
+token(type:IDENTIFIER) on line   88,  25 : h
+[ERROR] line   88: 26 lexical analyzer error ¡
+[ERROR] line   88: 27 lexical analyzer error ¨
+token(type:IDENTIFIER) on line   89,   8 : k
+token(type:KEYWORD   ) on line   89,   9 : [
+token(type:NUMBER    ) on line   89,  10 : 25
+token(type:KEYWORD   ) on line   89,  12 : ]
+token(type:KEYWORD   ) on line   89,  13 : [
+token(type:NUMBER    ) on line   89,  14 : 26
+token(type:KEYWORD   ) on line   89,  16 : ]
+token(type:KEYWORD   ) on line   89,  18 : :=
+token(type:IDENTIFIER) on line   89,  21 : k
+token(type:KEYWORD   ) on line   89,  22 : [
+token(type:NUMBER    ) on line   89,  23 : 25
+token(type:KEYWORD   ) on line   89,  25 : ]
+token(type:KEYWORD   ) on line   89,  26 : [
+token(type:NUMBER    ) on line   89,  27 : 26
+token(type:KEYWORD   ) on line   89,  29 : ]
+token(type:KEYWORD   ) on line   89,  31 : +
+token(type:NUMBER    ) on line   89,  33 : 6666
+token(type:KEYWORD   ) on line   89,  37 : ;
+[INFO ] line   89: 43 comment string
+[ERROR] line   90:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   90,   8 : include
+token(type:KEYWORD   ) on line   90,  16 : <
+token(type:IDENTIFIER) on line   90,  17 : assert
+token(type:KEYWORD   ) on line   90,  23 : .
+token(type:IDENTIFIER) on line   90,  24 : h
+token(type:KEYWORD   ) on line   90,  25 : >
+[ERROR] line   91:  7 lexical analyzer error #
+token(type:IDENTIFIER) on line   91,   8 : endif
+[INFO ] line   96:  8 comment string
+[ERROR] line   97:  8 lexical analyzer error #
+token(type:IDENTIFIER) on line   97,   9 : pragma
+[ERROR] line   97: 19 lexical analyzer error _
+[ERROR] line   97: 20 lexical analyzer error _
+token(type:IDENTIFIER) on line   97,  21 : promise
+token(type:KEYWORD   ) on line   97,  28 : (
+token(type:KEYWORD   ) on line   97,  29 : (
+token(type:IDENTIFIER) on line   97,  30 : k
+[ERROR] line   97: 32 lexical analyzer error %
+token(type:NUMBER    ) on line   97,  34 : 16
+token(type:KEYWORD   ) on line   97,  36 : )
+token(type:KEYWORD   ) on line   97,  38 : =
+token(type:KEYWORD   ) on line   97,  39 : =
+token(type:NUMBER    ) on line   97,  41 : 0
+token(type:KEYWORD   ) on line   97,  42 : )
+token(type:KEYWORD   ) on line   97,  43 : ;
+token(type:IDENTIFIER) on line   98,   8 : b
+token(type:KEYWORD   ) on line   98,  10 : :=
+token(type:NUMBER    ) on line   98,  13 : 1
+token(type:KEYWORD   ) on line   98,  14 : ;
+token(type:KEYWORD   ) on line   99,   8 : while
+token(type:IDENTIFIER) on line   99,  14 : b
+token(type:KEYWORD   ) on line   99,  16 : <=
+token(type:IDENTIFIER) on line   99,  19 : k
+token(type:KEYWORD   ) on line   99,  21 : do
+token(type:KEYWORD   ) on line  100,   8 : begin
+token(type:IDENTIFIER) on line  101,  10 : sum
+token(type:KEYWORD   ) on line  101,  14 : :=
+token(type:IDENTIFIER) on line  101,  17 : sum
+token(type:KEYWORD   ) on line  101,  21 : +
+token(type:IDENTIFIER) on line  101,  23 : a
+token(type:KEYWORD   ) on line  101,  24 : [
+token(type:IDENTIFIER) on line  101,  25 : b
+token(type:KEYWORD   ) on line  101,  26 : ]
+token(type:KEYWORD   ) on line  101,  27 : ;
+token(type:IDENTIFIER) on line  102,  10 : b
+token(type:KEYWORD   ) on line  102,  14 : :=
+token(type:IDENTIFIER) on line  102,  17 : b
+token(type:KEYWORD   ) on line  102,  19 : +
+token(type:NUMBER    ) on line  102,  21 : 1
+token(type:KEYWORD   ) on line  103,   8 : end
+token(type:KEYWORD   ) on line  103,  11 : ;
+token(type:KEYWORD   ) on line  106,   4 : end
+token(type:KEYWORD   ) on line  106,   7 : .
+[INFO ] line  106: 11 comment string

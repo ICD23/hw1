@@ -1,0 +1,38 @@
+token(type:KEYWORD   ) on line    1,   1 : PROGRAM
+token(type:IDENTIFIER) on line    1,   9 : mytest
+token(type:KEYWORD   ) on line    1,  15 : (
+token(type:IDENTIFIER) on line    1,  16 : input
+token(type:KEYWORD   ) on line    1,  21 : ,
+token(type:IDENTIFIER) on line    1,  23 : output
+token(type:KEYWORD   ) on line    1,  29 : ,
+token(type:IDENTIFIER) on line    1,  31 : error
+token(type:KEYWORD   ) on line    1,  36 : )
+token(type:KEYWORD   ) on line    1,  38 : ;
+[INFO ] line    3:  4 comment string
+token(type:KEYWORD   ) on line    4,   4 : var
+token(type:IDENTIFIER) on line    4,   8 : a
+token(type:KEYWORD   ) on line    4,   9 : ,
+token(type:NUMBER    ) on line    4,  11 : 0
+token(type:IDENTIFIER) on line    4,  12 : aa
+token(type:KEYWORD   ) on line    4,  14 : ,
+token(type:IDENTIFIER) on line    4,  16 : bb
+token(type:KEYWORD   ) on line    4,  18 : :
+token(type:KEYWORD   ) on line    4,  20 : integer
+token(type:KEYWORD   ) on line    4,  27 : ;
+token(type:KEYWORD   ) on line    5,   4 : var
+token(type:IDENTIFIER) on line    5,   8 : gg
+token(type:KEYWORD   ) on line    5,  10 : ,
+token(type:IDENTIFIER) on line    5,  12 : hh
+token(type:KEYWORD   ) on line    5,  14 : ,
+token(type:IDENTIFIER) on line    5,  16 : mm
+token(type:KEYWORD   ) on line    5,  18 : ,
+token(type:IDENTIFIER) on line    5,  20 : pp
+token(type:KEYWORD   ) on line    5,  22 : ,
+token(type:IDENTIFIER) on line    5,  24 : pp
+[ERROR] line    5: 26 lexical analyzer error @
+[ERROR] line    5: 27 lexical analyzer error $
+token(type:NUMBER    ) on line    5,  28 : 5
+token(type:KEYWORD   ) on line    5,  29 : :
+token(type:KEYWORD   ) on line    5,  31 : real
+token(type:KEYWORD   ) on line    5,  35 : ;
+[INFO ] line    7:  4 comment string start
