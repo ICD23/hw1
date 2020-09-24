@@ -14,3 +14,19 @@ token(type:KEYWORD   ) on line   13,   1 : then
 token(type:KEYWORD   ) on line   14,   1 : else
 token(type:KEYWORD   ) on line   15,   1 : while
 token(type:KEYWORD   ) on line   16,   1 : do
+1: program
+2: var
+3: array
+4: not
+5: of
+6: integer
+7: real
+8: function
+9: procedure
+10: begin
+11: end
+12: if
+13: then
+14: else
+15: while
+16: do

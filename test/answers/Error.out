@@ -5,3 +5,10 @@
 [ERROR] line    5:  1 lexical analyzer error %
 [ERROR] line    6:  1 lexical analyzer error ^
 [ERROR] line    7:  1 lexical analyzer error &
+1: @
+2: #
+3: !
+4: $
+5: %
+6: ^
+7: &

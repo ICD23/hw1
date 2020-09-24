@@ -7,4 +7,15 @@ token(type:NUMBER    ) on line    6,   1 : 1430E6
 token(type:NUMBER    ) on line    7,   1 : 16E+2
 token(type:NUMBER    ) on line    8,   1 : 7E-303
 token(type:NUMBER    ) on line    9,   1 : 142.53
-token(type:IDENTIFIER) on line    9,   7 : EAA
+[ERROR] line    9:  7 lexical analyzer error E
+[ERROR] line    9:  8 lexical analyzer error A
+[ERROR] line    9:  9 lexical analyzer error A
+1: 5.36
+2: 1768.0126976
+3: 17.249E5
+4: 16.33074E+2
+5: 16.3374E-2
+6: 1430E6
+7: 16E+2
+8: 7E-303
+9: 142.53EAA

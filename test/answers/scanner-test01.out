@@ -8,8 +8,7 @@ token(type:KEYWORD   ) on line    1,  29 : ,
 token(type:IDENTIFIER) on line    1,  31 : error
 token(type:KEYWORD   ) on line    1,  36 : )
 token(type:KEYWORD   ) on line    1,  38 : ;
-[INFO ] line    3:  4 comment string //incorrect symbols test
-
+[INFO ] line    3:  4 comment string
 token(type:KEYWORD   ) on line    4,   4 : var
 token(type:IDENTIFIER) on line    4,   8 : a
 token(type:KEYWORD   ) on line    4,   9 : ,
@@ -130,8 +129,7 @@ token(type:IDENTIFIER) on line   15,   8 : a_wrong_identifier_aadgnm
 token(type:KEYWORD   ) on line   15,  33 : :
 token(type:KEYWORD   ) on line   15,  35 : integer
 token(type:KEYWORD   ) on line   15,  42 : ;
-[INFO ] line   17:  4 comment string //this is a very long comment and includes letter and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`1234567890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB
-
+[INFO ] line   17:  4 comment string
 token(type:KEYWORD   ) on line   19,   4 : begin
 token(type:IDENTIFIER) on line   20,   7 : a
 token(type:KEYWORD   ) on line   20,   9 : :=
@@ -164,9 +162,10 @@ token(type:KEYWORD   ) on line   23,  20 : ;
 token(type:IDENTIFIER) on line   24,   7 : hh
 token(type:KEYWORD   ) on line   24,  10 : :=
 token(type:NUMBER    ) on line   24,  13 : 10.3
-token(type:IDENTIFIER) on line   24,  17 : E
+[ERROR] line   24: 17 lexical analyzer error E
 token(type:KEYWORD   ) on line   24,  18 : +
-token(type:IDENTIFIER) on line   24,  19 : BC
+[ERROR] line   24: 19 lexical analyzer error B
+[ERROR] line   24: 20 lexical analyzer error C
 token(type:KEYWORD   ) on line   24,  21 : ;
 token(type:IDENTIFIER) on line   25,   7 : mm
 token(type:KEYWORD   ) on line   25,  10 : :=
@@ -177,7 +176,9 @@ token(type:KEYWORD   ) on line   25,  23 : ;
 token(type:IDENTIFIER) on line   26,   7 : pp
 token(type:KEYWORD   ) on line   26,  10 : :=
 token(type:NUMBER    ) on line   26,  13 : 10.3
-token(type:IDENTIFIER) on line   26,  17 : EBC
+[ERROR] line   26: 17 lexical analyzer error E
+[ERROR] line   26: 18 lexical analyzer error B
+[ERROR] line   26: 19 lexical analyzer error C
 token(type:KEYWORD   ) on line   26,  20 : ;
 token(type:IDENTIFIER) on line   27,   7 : rr
 token(type:KEYWORD   ) on line   27,  10 : :=
@@ -220,7 +221,7 @@ token(type:KEYWORD   ) on line   34,  25 : :=
 token(type:KEYWORD   ) on line   34,  36 : *
 token(type:KEYWORD   ) on line   34,  37 : (
 token(type:KEYWORD   ) on line   34,  38 : )
-token(type:IDENTIFIER) on line   34,  39 : _
+[ERROR] line   34: 39 lexical analyzer error _
 token(type:KEYWORD   ) on line   34,  40 : +
 [ERROR] line   34: 41 lexical analyzer error |
 [ERROR] line   34: 42 lexical analyzer error `
@@ -233,8 +234,48 @@ token(type:KEYWORD   ) on line   34,  48 : /
 token(type:KEYWORD   ) on line   34,  49 : ;
 token(type:KEYWORD   ) on line   34,  50 : [
 token(type:KEYWORD   ) on line   34,  51 : ]
-[ERROR] line   34: 52 runaway string "{}<>?:
+[ERROR] line   34: 52 lexical analyzer error "
+[ERROR] line   34: 53 lexical analyzer error {
+[ERROR] line   34: 54 lexical analyzer error }
+token(type:KEYWORD   ) on line   34,  55 : <
+token(type:KEYWORD   ) on line   34,  56 : >
+[ERROR] line   34: 57 lexical analyzer error ?
+token(type:KEYWORD   ) on line   34,  58 : :
 token(type:KEYWORD   ) on line   35,   4 : end
 token(type:KEYWORD   ) on line   35,   7 : .
-[INFO ] line   35: 11 comment string // this is the end of the program
-
+[INFO ] line   35: 11 comment string
+1: PROGRAM mytest(input, output, error) ;
+2: 
+3:    //incorrect symbols test
+4:    var a, 0aa, bb: integer;
+5:    var gg, hh, mm, pp, pp@$5: real;
+6: 
+7:   
+8:    var di, ei, ei00, ei;,- : array [ 1 .. 10 ] of integer; 
+9:    var dr, er, er00, er;,-: array [ 1 .. 10 ] of real; 
+10: 
+11:    var kki, iii: array [ 23 .. 57 ] of array [ 23 .. 57 ] of integer; 
+12:    var kkr, iir: array [ 23 .. 57 ] of array [ 23 .. 57 ] of real; 
+13:    
+14:    var aVeryLongIdentifierGASDFDFGHJERYUKDVBNFBNDFGHwertyuioplkjhgfdsazxcvbnm: integer;
+15:    var a_wrong_identifier_aadgnm: integer;
+16:    
+17:    //this is a very long comment and includes letter and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`1234567890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB
+18: 
+19:    begin
+20:       a := 1;
+21:       bb:=354+126*(920-27/190);
+22:       cc := 10..20;
+23:       gg := 10.3E+5;
+24:       hh := 10.3E+BC;
+25:       mm := 10.3E+2.34;
+26:       pp := 10.3EBC;
+27:       rr := 10.3E+5+123;
+28:       str := "This is a srting!!";
+29:       str2 := "  This is a srting,too!!  ";
+30:       str3 := "";
+31:       str4 := "adc""def";
+33:       str4 := "cross 
+         line string";
+34:       incorrect_symbols := ~!@#$%^&*()_+|`-=\,./;[]"{}<>?:
+35:    end.   // this is the end of the program

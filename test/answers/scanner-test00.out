@@ -20,3 +20,9 @@ token(type:KEYWORD   ) on line    6,   1 : +
 token(type:IDENTIFIER) on line    6,   3 : ddd
 token(type:KEYWORD   ) on line    6,   7 : ;
 token(type:KEYWORD   ) on line    6,   9 : end
+1: begin
+2: real a3aa; 
+3: integer bb9b,ddd;
+4: a3aa:= bb9b +c9d + 123
+5: + 543
+6: + ddd ; end

@@ -1,89 +1,70 @@
 %{
 /*
- * scan.l
+ * scanner.l
  *
  * lex input file for pascal scanner
  *
- * extensions: two ways to spell "external" and "->" ok for "^".
  */
 
 #include <stdio.h>
 
-#define   AND                1
-#define   ARRAY              2
-#define   CASE               3
-#define   CONST              4
-#define   DIV                5
-#define   DO                 6
-#define   DOWNTO             7
-#define   ELSE               8
-#define   END                9
+#define PROGRAM      1
+#define VAR          2
+#define ARRAY        3
+#define OF           4
+#define INTEGER      5
+#define REAL         6
+#define STRING       7
+#define FUNCTION     8
+#define PROCEDURE    9
+#define PBEGIN      10
+#define END         11
+#define IF          12
+#define THEN        13
+#define ELSE        14
+#define WHILE       15
+#define DO          16
+#define NOT         17
+#define AND         18
+#define OR          19
 
-#define   EXTERNAL           10
-#define   FOR                11
-#define   FORWARD            12
-#define   FUNCTION           13
-#define   GOTO               14
-#define   IF                 15
-#define   IN                 16
-#define   LABEL              17
-#define   MOD                18
-#define   NIL                19
-#define   NOT                20
-#define   OF                 21
-#define   OR                 22
-#define   OTHERWISE          23
-#define   PACKED             24
-#define   PBEGIN             25
-#define   PFILE              26
-#define   PROCEDURE          27
-#define   PROGRAM            28
-#define   RECORD             29
-#define   REPEAT             30
-#define   SET                31
-#define   THEN               32
-#define   TO                 33
-#define   TYPE               34
-#define   UNTIL              35
-#define   VAR                36
-#define   WHILE              37
-#define   WITH               38
-#define   IDENTIFIER         39
+#define LPAREN      20
+#define RPAREN      21
+#define SEMICOLON   22
+#define DOT         23
+#define COMMA       24
+#define COLON       25
+#define LBRACE      26
+#define RBRACE      27
+#define DOTDOT      28
+#define ASSIGNMENT  29
+#define ADDOP       20
+#define SUBOP       21
+#define MULOP       22
+#define DIVOP       23
+#define LTOP        24
+#define GTOP        25
+#define EQOP        26
+#define GETOP       27
+#define LETOP       28
+#define NEQOP       29
 
-#define   ASSIGNMENT         40
-#define   CHARACTER_STRING   41
-#define   COLON              42
-#define   COMMA              43
-#define   DIGSEQ             44
-#define   DOT                45
-#define   DOTDOT             46
-#define   EQUAL              47
-#define   GE                 48
-#define   GT                 49
-#define   LBRAC              50
-#define   LE                 51
-#define   LPAREN             52
-#define   LT                 53
-#define   MINUS              54
-#define   NOTEQUAL           55
-#define   PLUS               56
-#define   RBRAC              57
-#define   REALNUMBER         58
-#define   RPAREN             59
-#define   SEMICOLON          60
-#define   SLASH              61
-#define   STAR               62
-#define   STARSTAR           63
-#define   UPARROW            64
-
-
-#define   notEQUAL           65
+#define IDENTIFIER  30
+#define REALNUMBER  31
+#define INTEGERNUM  32
+#define SCIENTIFIC  33
+#define LITERALSTR  34
 
 #define YY_USER_ACTION     chr_no += yyleng; // note this line
 
-#define LOG(TYPE) fprintf(stderr, "token(type:%-10s) on line %4d, %3d : %s\n", #TYPE, line_no, chr_no - yyleng + 1, yytext)
+#define MAX_LINE_LENG      256
+#define LIST       strcat(buffer, yytext)
+#define LIST_FLUSH do{ if(opt_list) printf("%d: %s", line_no, buffer); *buffer = 0; }while(0)
+#define LOG(TYPE) do{ LIST; fprintf(stderr, "token(type:%-10s) on line %4d, %3d : %s\n", #TYPE, line_no, chr_no - yyleng + 1, yytext); } while(0)
 
+int opt_list = 1;
 int line_no = 1, chr_no = 0;
+char buffer[MAX_LINE_LENG];
 
 %}
 
@@ -113,84 +94,69 @@ W [wW]
 X [xX]
 Y [yY]
 Z [zZ]
-NQUOTE [^']
 
 %%
-  /* you may remove some keyword/rule and add your own */
                              /* v could do something */
-{A}{N}{D}                    return(AND);
-{A}{R}{R}{A}{Y}              return(ARRAY);
-{C}{A}{S}{E}                 return(CASE);
-{C}{O}{N}{S}{T}              return(CONST);
-{D}{I}{V}                    return(DIV);
-{D}{O}                       return(DO);
-{D}{O}{W}{N}{T}{O}           return(DOWNTO);
-{E}{L}{S}{E}                 return(ELSE);
-{E}{N}{D}                    return(END);
-{E}{X}{T}{E}{R}{N} |
-{E}{X}{T}{E}{R}{N}{A}{L}     return(EXTERNAL);
-{F}{O}{R}                    return(FOR);
-{F}{O}{R}{W}{A}{R}{D}        return(FORWARD);
-{F}{U}{N}{C}{T}{I}{O}{N}     return(FUNCTION);
-{G}{O}{T}{O}                 return(GOTO);
-{I}{F}                       return(IF);
-{I}{N}                       return(IN);
-{L}{A}{B}{E}{L}              return(LABEL);
-{M}{O}{D}                    return(MOD);
-{N}{I}{L}                    return(NIL);
-{N}{O}{T}                    return(NOT);
-{O}{F}                       return(OF);
-{O}{R}                       return(OR);
-{O}{T}{H}{E}{R}{W}{I}{S}{E}  return(OTHERWISE);
-{P}{A}{C}{K}{E}{D}           return(PACKED);
-{B}{E}{G}{I}{N}              return(PBEGIN);
-{F}{I}{L}{E}                 return(PFILE);
-{P}{R}{O}{C}{E}{D}{U}{R}{E}  return(PROCEDURE);
-{P}{R}{O}{G}{R}{A}{M}        return(PROGRAM);
-{R}{E}{C}{O}{R}{D}           return(RECORD);
-{R}{E}{P}{E}{A}{T}           return(REPEAT);
-{S}{E}{T}                    return(SET);
-{T}{H}{E}{N}                 return(THEN);
-{T}{O}                       return(TO);
-{T}{Y}{P}{E}                 return(TYPE);
-{U}{N}{T}{I}{L}              return(UNTIL);
-{V}{A}{R}                    return(VAR);
-{W}{H}{I}{L}{E}              return(WHILE);
-{W}{I}{T}{H}                 return(WITH);
-[a-zA-Z]([a-zA-Z0-9])+       return(IDENTIFIER);
+{P}{R}{O}{G}{R}{A}{M}       {LOG(KEYWORD); return(PROGRAM);    }
+{V}{A}{R}                   {LOG(KEYWORD); return(VAR);        }
+{A}{R}{R}{A}{Y}             {LOG(KEYWORD); return(ARRAY);      }
+{O}{F}                      {LOG(KEYWORD); return(OF);         }
+{I}{N}{T}{E}{G}{E}{R}       {LOG(KEYWORD); return(INTEGER);    }
+{R}{E}{A}{L}                {LOG(KEYWORD); return(REAL);       }
+{S}{T}{R}{I}{N}{G}          {LOG(KEYWORD); return(STRING);     }
+{F}{U}{N}{C}{T}{I}{O}{N}    {LOG(KEYWORD); return(FUNCTION);   }
+{P}{R}{O}{C}{E}{D}{U}{R}{E} {LOG(KEYWORD); return(PROCEDURE);  }
+{B}{E}{G}{I}{N}             {LOG(KEYWORD); return(PBEGIN);     }
+{E}{N}{D}                   {LOG(KEYWORD); return(END);        }
+{I}{F}                      {LOG(KEYWORD); return(IF);         }
+{T}{H}{E}{N}                {LOG(KEYWORD); return(THEN);       }
+{E}{L}{S}{E}                {LOG(KEYWORD); return(ELSE);       }
+{W}{H}{I}{L}{E}             {LOG(KEYWORD); return(WHILE);      }
+{D}{O}                      {LOG(KEYWORD); return(DO);         }
+{N}{O}{T}                   {LOG(KEYWORD); return(NOT);        }
+{A}{N}{D}                   {LOG(KEYWORD); return(AND);        }
+{O}{R}                      {LOG(KEYWORD); return(OR);         }
 
-  /* you may remove some keyword/rule and add your own */
-":="                         return(ASSIGNMENT);
-'({NQUOTE}|'')+'             return(CHARACTER_STRING);
-":"                          return(COLON);
-","                          return(COMMA);
-[0-9]+                       return(DIGSEQ);
-"."                          return(DOT);
-"="                          return(EQUAL);
-"!="                         return(notEQUAL);
-">="                         return(GE);
-">"                          return(GT);
-"["                          return(LBRAC);
-"<="                         return(LE);
-"("                          return(LPAREN);
-"<"                          return(LT);
-"-"                          return(MINUS);
-"<>"                         return(NOTEQUAL);
-"+"                          return(PLUS);
-"]"                          return(RBRAC);
-[0-9]+"."[0-9]+              return(REALNUMBER);
-")"                          return(RPAREN);
-";"                          return(SEMICOLON);
-"/"                          return(SLASH);
-"*"                          return(STAR);
+"("                         {LOG(KEYWORD); return(LPAREN);     }
+")"                         {LOG(KEYWORD); return(RPAREN);     }
+";"                         {LOG(KEYWORD); return(SEMICOLON);  }
+"."                         {LOG(KEYWORD); return(DOT);        }
+","                         {LOG(KEYWORD); return(COMMA);      }
+":"                         {LOG(KEYWORD); return(COLON);      }
+"["                         {LOG(KEYWORD); return(LBRACE);     }
+"]"                         {LOG(KEYWORD); return(RBRACE);     }
+".."                        {LOG(KEYWORD); return(DOTDOT);     }
+":="                        {LOG(KEYWORD); return(ASSIGNMENT); }
+"+"                         {LOG(KEYWORD); return(ADDOP);      }
+"-"                         {LOG(KEYWORD); return(SUBOP);      }
+"*"                         {LOG(KEYWORD); return(MULOP);      }
+"/"                         {LOG(KEYWORD); return(DIVOP);      }
+">"                         {LOG(KEYWORD); return(GTOP);       }
+"<"                         {LOG(KEYWORD); return(LTOP);       }
+"="                         {LOG(KEYWORD); return(EQOP);       }
+">="                        {LOG(KEYWORD); return(GETOP);      }
+"<="                        {LOG(KEYWORD); return(LETOP);      }
+"!="                        {LOG(KEYWORD); return(NEQOP);      }
 
-  /*[rule] fprintf(stdout, "[ERROR] line %4d:%3d runaway string %s\n", line_no, chr_no-(int)yyleng+1, yytext);*/
+  /* define identifier here */
 
-[ \t\f\r]    ;
+  /* define INTEGERNUM, REALNUMBER, SCIENTIFIC here */
 
-\n    { line_no++, chr_no = 0; }
+  /* define single/multiple line comment here */
 
-.     fprintf(stderr, "[ERROR] line %4d:%3d lexical analyzer error %s\n", line_no, chr_no-(int)yyleng+1, yytext);
+  /* define string constant (LITERALSTR) here */
+
+  /* define pragma here */
+
+[ \t\f\r]    LIST;
+
+\n {
+  LIST;
+  LIST_FLUSH;
+  line_no++, chr_no = 0;
+}
+
+.  { LIST; fprintf(stderr, "[ERROR] line %4d:%3d lexical analyzer error %s\n", line_no, chr_no-(int)yyleng+1, yytext); }
 
 %%
 
@@ -210,4 +176,4 @@ int main(int argc, char** argv) {
   return 0;
 }
 
-yywrap() { fclose(yyin), exit(1); }
+int yywrap() { fclose(yyin), exit(0); }

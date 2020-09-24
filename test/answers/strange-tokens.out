@@ -27,13 +27,15 @@ token(type:KEYWORD   ) on line   10,  23 : :
 token(type:NUMBER    ) on line   11,   1 : 0
 token(type:KEYWORD   ) on line   11,   2 : .
 token(type:NUMBER    ) on line   12,   1 : 0.0
-token(type:IDENTIFIER) on line   12,   6 : OK
+[ERROR] line   12:  6 lexical analyzer error O
+[ERROR] line   12:  7 lexical analyzer error K
 token(type:NUMBER    ) on line   13,   1 : 000
 token(type:KEYWORD   ) on line   13,   4 : .
 token(type:KEYWORD   ) on line   14,   1 : .
 token(type:NUMBER    ) on line   14,   2 : 000
 token(type:NUMBER    ) on line   15,   1 : 0.000
-token(type:IDENTIFIER) on line   15,   7 : OK
+[ERROR] line   15:  7 lexical analyzer error O
+[ERROR] line   15:  8 lexical analyzer error K
 token(type:NUMBER    ) on line   16,   1 : 000.00
 token(type:KEYWORD   ) on line   17,   1 : .
 token(type:NUMBER    ) on line   17,   2 : 123
@@ -82,16 +84,12 @@ token(type:IDENTIFIER) on line   39,  21 : a
 token(type:KEYWORD   ) on line   39,  23 : string
 token(type:IDENTIFIER) on line   42,   1 : comments
 token(type:KEYWORD   ) on line   42,   9 : :
-[INFO ] line   44:  1 comment string // this is a comment
-
+[INFO ] line   44:  1 comment string
 [INFO ] line   45:  1 comment string start
-/* this is a comment */
 [INFO ] line   45: 22 comment string end
 [INFO ] line   46:  1 comment string start
-/* this is wrong    //  hello hello    This is the same comment. */
 [INFO ] line   46: 66 comment string end
-[INFO ] line   47:  1 comment string // fdsfds */  fsdfds /* fdsfds */ fdsfdsfds
-
+[INFO ] line   47:  1 comment string
 token(type:IDENTIFIER) on line   49,   1 : pragmas
 token(type:KEYWORD   ) on line   49,   8 : :
 token(type:IDENTIFIER) on line   49,  11 : a
@@ -112,3 +110,54 @@ token(type:IDENTIFIER) on line   51,   2 : pragmas
 token(type:IDENTIFIER) on line   51,  10 : profiling
 token(type:NUMBER    ) on line   51,  20 : 27
 token(type:NUMBER    ) on line   51,  23 : 59
+1: integers:
+2:  
+3: 0
+4: 123
+5: 00
+6: 00123
+7: 0123
+8: 123456789012345678901234567890  too big for the compiler, but this is ok for the scanner.
+9: 
+10: floating point numbers:
+11: 0.
+12: 0.0  OK
+13: 000.
+14: .000
+15: 0.000 OK
+16: 000.00
+17: .123
+18: 
+19: scientific notations:
+20: 3.45E4
+21: 3.45E+4
+22: 3.45E-4
+23: 3.45E04
+24: 3.45E+04
+25: 3.45E-04
+26: 
+27: 1.23e4
+28: 3.45e+4
+29: 3.45e-4
+30: 3.45e04
+31: 3.45e+04
+32: 3.45e-04
+33: 
+34: strings:
+35: "abcde"
+36: "abcd""efg" double quote in a string
+37: "abc\ndef"  newline in a string.
+38: "'" single quote in a string
+39: "'" single quote in a string
+40: 
+41: 
+42: comments:
+43: 
+44: // this is a comment
+45: /* this is a comment */
+46: /* this is wrong    //  hello hello    This is the same comment. */
+47: // fdsfds */  fsdfds /* fdsfds */ fdsfdsfds
+48: 
+49: pragmas:  a pragma occupies a single line by itself, starting with "#pragma".
+50: 
+51: #pragmas profiling 27 59

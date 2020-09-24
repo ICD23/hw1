@@ -10,6 +10,9 @@ output/%.out: %.p
 test: all
 	@bash test.sh
 
+check: all
+	@bash check.sh
+
 output:
 	mkdir -p $@
 

@@ -8,18 +8,15 @@ token(type:KEYWORD   ) on line    1,  26 : ,
 token(type:IDENTIFIER) on line    1,  28 : error
 token(type:KEYWORD   ) on line    1,  33 : )
 token(type:KEYWORD   ) on line    1,  35 : ;
-[INFO ] line    2:  4 comment string // this test checks a very long variable name.
-
-[INFO ] line    3:  4 comment string // a very long variable name 
-
+[INFO ] line    2:  4 comment string
+[INFO ] line    3:  4 comment string
 token(type:KEYWORD   ) on line    4,   4 : var
 token(type:IDENTIFIER) on line    4,   8 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
 token(type:KEYWORD   ) on line    4, 108 : :
 token(type:KEYWORD   ) on line    4, 110 : integer
 token(type:KEYWORD   ) on line    4, 117 : ;
 token(type:KEYWORD   ) on line    6,   4 : begin
-[INFO ] line    7:  7 comment string // very long variable names
-
+[INFO ] line    7:  7 comment string
 token(type:IDENTIFIER) on line    8,   7 : d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789
 token(type:KEYWORD   ) on line    9,   7 : :=
 token(type:NUMBER    ) on line    9,  10 : 3
@@ -33,5 +30,20 @@ token(type:KEYWORD   ) on line   14,   7 : +
 token(type:NUMBER    ) on line   14,   9 : 9
 token(type:KEYWORD   ) on line   16,   4 : end
 token(type:KEYWORD   ) on line   16,   7 : .
-[INFO ] line   16: 11 comment string // this is the end of the program
-
+[INFO ] line   16: 11 comment string
+1: PROGRAM foo(input, output, error) ;
+2:    // this test checks a very long variable name.
+3:    // a very long variable name 
+4:    var d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789: integer;  
+5: 
+6:    begin
+7:       // very long variable names
+8:       d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789 
+9:       := 3 + 9;
+10: 
+11:       d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789 
+12:       := 
+13:       d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789d123456789 
+14:       + 9
+15: 
+16:    end.   // this is the end of the program

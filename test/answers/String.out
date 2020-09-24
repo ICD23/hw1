@@ -17,3 +17,20 @@ token(type:STRING    ) on line   13,   1 : " Multi-Line
   /* 
     This is a comment
   */ "
+1: ""
+2: "Single String"
+3: "Double" "Strings"
+4: "double quote->""<-double quote"
+5: "Your string should ignore these reserved words -> program var array not"
+6: " Test whether you can ignore comments // This is a comment "
+7: " Test whether you can ignore comments /* This is a comment */ "
+8: " Test whether you can ignore comments // This is a comment /* This is a comment */ "
+10: " Multi-Line
+  String Can you tokenize it"
+12: " Multi-Line
+  With comment // This is a comment "
+17: " Multi-Line
+  With comment 
+  /* 
+    This is a comment
+  */ "  
