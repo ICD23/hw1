@@ -59,7 +59,7 @@
 
 #define MAX_LINE_LENG      256
 #define LIST       strcat(buffer, yytext)
-#define LIST_FLUSH do{ if(opt_list) printf("%d: %s", line_no, buffer); *buffer = 0; }while(0)
+#define LIST_FLUSH do{ if(opt_list) printf("%s", buffer); *buffer = 0; }while(0)
 #define LOG(TYPE) do{ LIST; fprintf(stderr, "token(type:%-10s) on line %4d, %3d : %s\n", #TYPE, line_no, chr_no - yyleng + 1, yytext); } while(0)
 
 int opt_list = 1;

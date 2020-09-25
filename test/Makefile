@@ -1,17 +1,14 @@
 EXE     := ../scanner
 SRCS    := $(wildcard *.p)
-OBJS    := $(patsubst %.p,output/%.out,$(SRCS))
+OBJS    := $(patsubst %.p,output/%.token,$(SRCS))
 
 all: output $(OBJS)
 
-output/%.out: %.p
-	@-./$(EXE) $^ > $@ 2>$@.src
+output/%.token: %.p
+	@-./$(EXE) $^ > $@.src 2>$@
 
 test: all
 	@bash test.sh
-
-check: all
-	@bash check.sh
 
 output:
 	mkdir -p $@

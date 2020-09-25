@@ -1,6 +1,0 @@
-1: begin
-2: real a3aa; 
-3: integer bb9b,ddd;
-4: a3aa:= bb9b +c9d + 123
-5: + 543
-6: + ddd ; end

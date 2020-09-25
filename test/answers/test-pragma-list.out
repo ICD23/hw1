@@ -1,3 +1,0 @@
-1: PROGRAM mytest(input, output, error) ;
-6: #pragma list on
-7:    //this is a very long comment and includes letter and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`1234567890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB
