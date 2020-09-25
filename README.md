@@ -1,11 +1,46 @@
 # ICD20 Homework1
 
-## Environment
+## Docker
 
-We provide a docker image for the environment:
-(you need install docker by yourself first)
+We provide a docker image for the environment, so you need install docker first.
 
-On \*nix:
+More details can be found on [docker website](https://docs.docker.com/get-docker/),
+and we provide part of Linux installation and Windows installation video here.
+
+- Linux: (Arch Linux)
+```bash
+sudo pacman -S docker # install the docker from package
+
+systemctl start docker.service # start the docker service
+systemctl enable docker.service # start the docker service
+
+gpasswd -a username docker # you should change the `username` into yours
+
+newgrp docker # update the newgroup
+```
+
+- Linux: (Ubuntu)
+```bash
+sudo apt install docker.io
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+sudo usermod -aG docker username
+
+# and re-login the system
+```
+
+- Windows:
+
+[![windows setup](https://i.ytimg.com/vi/HddnQnU4zXk/hqdefault.jpg)](https://www.youtube.com/watch?v=HddnQnU4zXk)
+
+
+## Image and Container
+
+Download the Git repository (via git or download as zip).
+
+On \*nix (in terminal):
 ```
 bash activate.sh # start the container, it will auto-pull the image if you didn't pull it
 ```
@@ -21,11 +56,10 @@ More information about cscc docker suuport, please refer [dosh](https://cscc.cs.
 
 [![asciicast](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3.svg)](https://asciinema.org/a/R6lPjk7iwCXHVzGcGFBxAh4J3)
 
-On Windows:
+On Windows (in cmd):
 ```
 activate.bat
 ```
-[![windows setup](https://i.ytimg.com/vi/HddnQnU4zXk/hqdefault.jpg)](https://www.youtube.com/watch?v=HddnQnU4zXk)
 
 It will mount the repository to `/root/hw1`.
 Note the script use the `--rm` flag on docker command,
