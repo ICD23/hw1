@@ -11,9 +11,7 @@ PROGRAM mytest(input, output, error) ;
       str2 := "  This is a srting,too!!  ";
       str3 := "";
       str4 := "adc""def";
-      str4 := "cross 
-         line string";
-      str5 := "cross 
-         line string;
+      str4 := "single line string";
+      str5 := "single line string;
       a := 5 +bb;
    end.   // this is the end of the program

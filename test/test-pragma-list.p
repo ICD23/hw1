@@ -11,11 +11,7 @@ PROGRAM mytest(input, output, error) ;
       str2 := "  This is a srting,too!!  ";
       str3 := "";
       str4 := "adc""def";
-      str4 := "cross 
-#   pragma  list     on
-         line string";
-      str5 := "cross 
-         line string";
+      str4 := "single #  pragma  list on  line string";
 #pragma list off
       a := 5 +bb;
    end.   // this is the end of the program
