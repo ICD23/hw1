@@ -68,6 +68,24 @@ which means it will remove the container every time you exit.
 The container is for compilation, we simply provide `vim` in this container,
 you can use any editor you like on your host machine.
 
+## MobaXterm
+
+If your platform is win7, there may exist some problem on docker volume setup
+(you may try to install docker toolbox instead of docker desktop, but it may still not work)
+
+You can install mobaXterm instead, but still need check your code can work on docker (you can try it on cscc workstation).
+
+If you download the portalble version, note that you may want to set the persistent home directory to prevent file mssing everytime you restart MobaXterm.
+
+After you download MobaXterm, install the package it need to do your homework:
+
+```
+bash mobapkg.sh
+```
+
+More details could be found in the video:
+
+[![windows setup](https://i.ytimg.com/vi/QQbeArOOC4o/hqdefault.jpg)](https://www.youtube.com/watch?v=QQbeArOOC4o)
 
 # Assignment
 
