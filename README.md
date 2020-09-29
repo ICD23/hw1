@@ -70,12 +70,13 @@ you can use any editor you like on your host machine.
 
 ## MobaXterm
 
-If your platform is win7, there may exist some problem on docker volume setup
+If your platform is win7, there may exist some problems on docker volume setup
+
 (you may try to install docker toolbox instead of docker desktop, but it may still not work)
 
 You can install mobaXterm instead, but still need check your code can work on docker (you can try it on cscc workstation).
 
-If you download the portalble version, note that you may want to set the persistent home directory to prevent file mssing everytime you restart MobaXterm.
+If you download the portable version, note that you may want to set the persistent home directory to prevent file missing every time you restart MobaXterm.
 
 After you download MobaXterm, install the package it need to do your homework:
 
