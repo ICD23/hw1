@@ -22,7 +22,7 @@ else
 fi
 
 correct=0
-pass=-3
+pass=0
 ignore=0
 
 echo " ======== testing ========= "
