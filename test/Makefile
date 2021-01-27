@@ -1,11 +1,11 @@
 EXE     := ../scanner
 SRCS    := $(wildcard *.p)
-OBJS    := $(patsubst %.p,output/%.token,$(SRCS))
+OBJS    := $(patsubst %.p,output/%.phony,$(SRCS))
 
-all: output $(OBJS)
+all: output $(EXE) $(OBJS)
 
-output/%.token: %.p
-	@-./$(EXE) $^ > $@.src 2>$@
+output/%.phony: %.p
+	@-./$(EXE) $^ > $(patsubst %.phony,%.token.src,$@) 2>$(patsubst %.phony,%.token,$@)
 
 test: all
 	@bash test.sh

@@ -6,11 +6,11 @@ LIBS    = -lfl
 
 all: $(SCANNER)
 
-$(SCANNER): $(SCANNER).c
-	$(CC) $(CCFLAGS) $< -o $(SCANNER) $(LIBS)
-
 $(SCANNER).c: %.c: %.l
 	$(LEX) -o $@ $<
+
+$(SCANNER): $(SCANNER).c
+	$(CC) $(CCFLAGS) $< -o $(SCANNER) $(LIBS)
 
 prepare:
 	# we have installed the package meet the basic needs

@@ -7,6 +7,7 @@
  */
 
 #include <stdio.h>
+#include <string.h>
 
 #define PROGRAM      1
 #define VAR          2
@@ -55,15 +56,15 @@
 #define SCIENTIFIC  33
 #define LITERALSTR  34
 
-#define YY_USER_ACTION     chr_no += yyleng; // note this line
+#define YY_USER_ACTION     col_no += yyleng; // note this line
 
 #define MAX_LINE_LENG      256
 #define LIST       strcat(buffer, yytext)
 #define LIST_FLUSH do{ if(opt_list) printf("%s", buffer); *buffer = 0; }while(0)
-#define LOG(TYPE) do{ LIST; fprintf(stderr, "token(type:%-10s) on line %4d, %3d : %s\n", #TYPE, line_no, chr_no - yyleng + 1, yytext); } while(0)
+#define LOG(TYPE) do{ LIST; fprintf(stderr, "token(type:%-10s) on line %4d, %3d : %s\n", #TYPE, line_no, col_no - yyleng, yytext); } while(0)
 
 int opt_list = 1;
-int line_no = 1, chr_no = 0;
+int line_no = 1, col_no = 1;
 char buffer[MAX_LINE_LENG];
 
 %}
@@ -153,10 +154,10 @@ Z [zZ]
 \n {
   LIST;
   LIST_FLUSH;
-  line_no++, chr_no = 0;
+  line_no++, col_no = 1;
 }
 
-.  { LIST; fprintf(stderr, "[ERROR] line %4d:%3d lexical analyzer error %s\n", line_no, chr_no-(int)yyleng+1, yytext); }
+.  { LIST; fprintf(stderr, "[ERROR] line %4d:%3d lexical analyzer error %s\n", line_no, col_no - yyleng, yytext); }
 
 %%
 
