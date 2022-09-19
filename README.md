@@ -1,4 +1,4 @@
-# ICD20 Homework1
+# ICD22 Homework1
 
 ## Docker
 
@@ -7,7 +7,7 @@ We provide a docker image for the environment, so you need install docker first.
 More details can be found on [docker website](https://docs.docker.com/get-docker/),
 and we provide part of Linux installation and Windows installation video here.
 
-- Linux: (Arch Linux)
+- Linux: (Arch Linux) (Recommend)
 ```bash
 sudo pacman -S docker # install the docker from package
 
@@ -19,7 +19,7 @@ gpasswd -a username docker # you should change the `username` into yours
 newgrp docker # update the newgroup
 ```
 
-- Linux: (Ubuntu)
+- Linux: (Ubuntu)(Recommend)
 ```bash
 sudo apt install docker.io
 
