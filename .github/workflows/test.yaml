@@ -5,8 +5,8 @@ jobs:
                 runs-on: ubuntu-latest
                 steps:
                         - uses: actions/checkout@v3
-                        - run: sudo apt install flex-old
-                        - run: make pull
-                        - run: make all
-                        - run: make test
+                         run: sudo apt install flex-old
+                         run: make pull
+                         run: sudo make all
+                         run: sudo make test
                         
