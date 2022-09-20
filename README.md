@@ -26,9 +26,10 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 
-sudo usermod -aG docker username
+sudo usermod -aG docker $(whoami) # Add yourself to docker group 
+newgrp docker # update the newgroup
 
-# and re-login the system
+
 ```
 
 - Windows:
