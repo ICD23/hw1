@@ -103,6 +103,9 @@ We have provided these commands in the Makefile, feel free to modify them accord
 
 You can use the command `make test` for testing, and we will use the original test case result as your score, but the `test/` dir will be replaced when grading.
 
+## DEBUG
+
+You can use `./compare.sh` to find out the difference between your output and answer. Usage: `./compare.sh ({ID of the test case you wnat to see} | all)`
 
 # Submission
 
