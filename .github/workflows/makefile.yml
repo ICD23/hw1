@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    
+    - run: sudo apt install flex
+    - run: sudo apt install flex-old-doc
     - name: install flex
       run: sudo apt install flex-old
 
