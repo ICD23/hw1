@@ -101,9 +101,15 @@ We have provided these commands in the Makefile, feel free to modify them accord
 
 # Test
 
+## Using docker(Recommend)
 You can use the command `make test` for testing, and we will use the original test case result as your score, but the `test/` dir will be replaced when grading.
 
-## DEBUG
+## Using github workflow
+You can clone the github repo to your github account. Github CI will help to test the result of your scanner everytime you commit to master.
+
+*Note: This is an alternative way for you to test your scanner which does not guarantee the result is the same as docker!!*
+
+# DEBUG
 
 You can use `./compare.sh` to find out the difference between your output and answer. Usage: `./compare.sh ({ID of the test case you wnat to see} | all)`
 
