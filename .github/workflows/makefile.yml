@@ -15,8 +15,10 @@ jobs:
     - uses: actions/checkout@v3
     
     - run: ls
-    - run: sudo apt install flex=2.6.4-6.2
     - name: install flex
+      run: sudo apt install flex
+      
+    - name: install flex-dev
       run: sudo apt install libfl-dev
 
     - name: Install dependencies
